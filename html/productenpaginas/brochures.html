@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brochures - Drukkerij Qualigrafia</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/afwerkingspaginas/afwerking.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+        // Functie om de donkere modus in te schakelen
+        function toggleDarkMode() {
+            var body = document.body;
+            body.classList.toggle('dark-mode');
+
+            // Donkere modus voorkeur opslaan in localStorage
+            if (body.classList.contains('dark-mode')) {
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                localStorage.setItem('darkMode', 'disabled');
+            }
+        }
+
+        // Donkere modus voorkeur toepassen bij het laden van de pagina
+        document.addEventListener('DOMContentLoaded', function() {
+            var darkMode = localStorage.getItem('darkMode');
+
+            if (darkMode === 'enabled') {
+                document.body.classList.add('dark-mode');
+            }
+        });
+    </script>
+</head>
+<body>
+<header class="header">
+    <div class="logo-nav-container">
+        <div class="logo">
+            <img src="../../img/logo.png" alt="Drukkerij Qualigrafia">
+        </div>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="../tech_info.html">Technische Info</a>
+            <a href="../producten.html" class='active-page'>Producten</a>
+            <a href="../portfolio.html">Portfolio</a>
+            <a href="../wie_zijn_we.html">Wie zijn we</a>
+            <a href="https://reklameklokje.be/" target="_blank">Reklameklokje</a>
+            <a href="../contact.html">Contact</a>
+        </nav>
+        <div class="toggle-container" onclick="toggleDarkMode()">
+            <span class="toggle-sun">☀️</span>
+            <div class="toggle-circle"></div>
+            <span class="toggle-moon">🌙</span>
+        </div>
+    </div>
+</header>
+<main class="main-content">
+    <section class="content">
+        <h1>Brochures</h1>
+        <img src="../../img/productenpaginas/brochures.jpg" alt="Brochures">
+        <h1>Wat zijn Brochures?</h1>
+        <h2>Definitie</h2>
+        <p><strong>Brochures</strong> zijn gedrukte documenten, meestal bestaande uit meerdere pagina's, die worden gebruikt voor promotionele of informatieve doeleinden. Ze bevatten vaak afbeeldingen, grafieken, en tekst om producten, diensten of informatie op een aantrekkelijke en beknopte manier te presenteren.</p>
+
+        <h2>Voordelen van Brochures</h2>
+        <ul>
+            <li><strong>Informatief:</strong> Geeft uitgebreide informatie over producten of diensten op een compacte manier.</li>
+            <li><strong>Visueel Aantrekkelijk:</strong> Kan worden ontworpen met levendige afbeeldingen en grafieken om de aandacht van de lezer te trekken.</li>
+            <li><strong>Veelzijdig:</strong> Kan worden gebruikt in verschillende sectoren zoals marketing, educatie, en evenementen.</li>
+        </ul>
+
+        <h2>Toepassingen van Brochures</h2>
+        <p>Brochures worden vaak gebruikt voor:</p>
+        <ul>
+            <li><strong>Productcatalogi:</strong> Een overzicht van producten met details, prijzen en afbeeldingen.</li>
+            <li><strong>Bedrijfspresentaties:</strong> Om het bedrijf en zijn diensten voor te stellen aan potentiële klanten.</li>
+            <li><strong>Evenementen:</strong> Informatie over evenementen, conferenties, of beurzen.</li>
+            <li><strong>Promotionele Acties:</strong> Om speciale aanbiedingen of campagnes onder de aandacht te brengen.</li>
+        </ul>
+
+        <h2>Hoe Werkt het Ontwerpen van Brochures?</h2>
+        <p>Het ontwerp van een brochure begint met het bepalen van het doel en de doelgroep. De lay-out wordt zorgvuldig gepland om informatie op een overzichtelijke en aantrekkelijke manier te presenteren. Er wordt gebruik gemaakt van hoogwaardige afbeeldingen, goed gekozen lettertypen en kleuren die passen bij de huisstijl van het bedrijf. Het drukproces omvat vaak afwerkingstechnieken zoals lamineren of vernis om de duurzaamheid en het visuele effect van de brochure te verbeteren.</p>
+
+        <h2>Belangrijke Overwegingen bij het Ontwerpen van Brochures</h2>
+        <ul>
+            <li><strong>Formaat:</strong> Kies het juiste formaat voor de hoeveelheid informatie en het doel van de brochure.</li>
+            <li><strong>Papierkwaliteit:</strong> Hoogwaardig papier geeft een professionele uitstraling en voelt beter aan voor de lezer.</li>
+            <li><strong>Afwerking:</strong> Overweeg afwerkingstechnieken zoals glanslaminaat of mat vernis voor extra bescherming en visuele impact.</li>
+        </ul>
+    </section>
+</main>
+<footer class="footer">
+    &copy; 2024 Drukkerij Qualigrafia bvba
+</footer>
+</body>
+</html>

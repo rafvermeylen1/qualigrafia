@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plooien - Drukkerij Qualigrafia</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/afwerkingspaginas/afwerking.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+        // Functie om de donkere modus in te schakelen
+        function toggleDarkMode() {
+            var body = document.body;
+            body.classList.toggle('dark-mode');
+
+            // Donkere modus voorkeur opslaan in localStorage
+            if (body.classList.contains('dark-mode')) {
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                localStorage.setItem('darkMode', 'disabled');
+            }
+        }
+
+        // Donkere modus voorkeur toepassen bij het laden van de pagina
+        document.addEventListener('DOMContentLoaded', function() {
+            var darkMode = localStorage.getItem('darkMode');
+
+            if (darkMode === 'enabled') {
+                document.body.classList.add('dark-mode');
+            }
+        });
+    </script>
+</head>
+<body>
+<header class="header">
+    <div class="logo-nav-container">
+        <div class="logo">
+            <img src="../../img/logo.png" alt="Drukkerij Qualigrafia">
+        </div>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="../tech_info.html" class='active-page'>Technische Info</a>
+            <a href="../producten.html">Producten</a>
+            <a href="../portfolio.html">Portfolio</a>
+            <a href="../wie_zijn_we.html">Wie zijn we</a>
+            <a href="https://reklameklokje.be/" target="_blank">Reklameklokje</a>
+            <a href="../contact.html">Contact</a>
+        </nav>
+        <div class="toggle-container" onclick="toggleDarkMode()">
+            <span class="toggle-sun">☀️</span>
+            <div class="toggle-circle"></div>
+            <span class="toggle-moon">🌙</span>
+        </div>
+    </div>
+</header>
+<main class="main-content">
+    <section class="content">
+        <h1>Plooien</h1>
+        <img src="../../img/afwerkingspaginas/plooien.jpg" alt="Plooien">
+        <h1>Wat is Plooien?</h1>
+        <h2>Definitie</h2>
+        <p><strong>Plooien</strong> is een techniek waarbij papier of ander materiaal nauwkeurig wordt gevouwen om een gewenste vorm of structuur te verkrijgen. Dit proces is essentieel in de productie van verschillende gedrukte materialen zoals brochures, folders, en boekjes, waar een nette en precieze vouwlijn cruciaal is voor een professioneel eindproduct.</p>
+
+        <h2>Voordelen van Plooien</h2>
+        <ul>
+            <li><strong>Precisie:</strong> Zorgt voor exact geplaatste vouwlijnen, wat essentieel is voor een symmetrisch en professioneel eindproduct.</li>
+            <li><strong>Efficiëntie:</strong> Vergemakkelijkt het vouwproces, vooral bij grote oplages.</li>
+            <li><strong>Veelzijdigheid:</strong> Kan worden toegepast op verschillende papiersoorten en -formaten.</li>
+        </ul>
+
+        <h2>Toepassingen van Plooien</h2>
+        <p>Plooien wordt vaak gebruikt voor:</p>
+        <ul>
+            <li><strong>Folders:</strong> Voor het creëren van meervoudige vouwlijnen in informatieve brochures.</li>
+            <li><strong>Brochures:</strong> Om nette en gelijkmatige vouwen te maken die bijdragen aan de leesbaarheid en het ontwerp.</li>
+            <li><strong>Boekjes:</strong> Voor een precieze afwerking van omslagen en pagina's.</li>
+            <li><strong>Wenskaarten:</strong> Voor het verkrijgen van een nette en scherpe vouw in het midden van de kaart.</li>
+        </ul>
+
+        <h2>Hoe Werkt Plooien?</h2>
+        <p>Bij het plooien wordt het papier of materiaal langs een rechte lijn gevouwen. Dit kan zowel handmatig als machinaal worden gedaan, afhankelijk van de oplage en precisie-eisen. Bij machinaal plooien worden de materialen door een vouwmachine geleid die de vouwen nauwkeurig plaatst.</p>
+
+        <h2>Belangrijke Overwegingen bij Plooien</h2>
+        <ul>
+            <li><strong>Dikte van het Papier:</strong> Dikker papier vereist vaak een voorafgaande bewerking zoals rillen om te voorkomen dat het scheurt of barst bij het vouwen.</li>
+            <li><strong>Type Vouw:</strong> Verschillende soorten vouwen (bijv. zigzag, enkel, dubbele vouw) vereisen verschillende technieken en instellingen.</li>
+            <li><strong>Precisie:</strong> De nauwkeurigheid van de vouw is essentieel om ervoor te zorgen dat de vouwen symmetrisch en esthetisch zijn.</li>
+        </ul>
+    </section>
+</main>
+<footer class="footer">
+    &copy; 2024 Drukkerij Qualigrafia bvba
+</footer>
+</body>
+</html>

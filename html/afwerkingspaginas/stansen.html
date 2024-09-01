@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stansen - Drukkerij Qualigrafia</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/afwerkingspaginas/afwerking.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+        // Functie om de donkere modus in te schakelen
+        function toggleDarkMode() {
+            var body = document.body;
+            body.classList.toggle('dark-mode');
+
+            // Donkere modus voorkeur opslaan in localStorage
+            if (body.classList.contains('dark-mode')) {
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                localStorage.setItem('darkMode', 'disabled');
+            }
+        }
+
+        // Donkere modus voorkeur toepassen bij het laden van de pagina
+        document.addEventListener('DOMContentLoaded', function() {
+            var darkMode = localStorage.getItem('darkMode');
+
+            if (darkMode === 'enabled') {
+                document.body.classList.add('dark-mode');
+            }
+        });
+    </script>
+</head>
+<body>
+<header class="header">
+    <div class="logo-nav-container">
+        <div class="logo">
+            <img src="../../img/logo.png" alt="Drukkerij Qualigrafia">
+        </div>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="../tech_info.html" class='active-page'>Technische Info</a>
+            <a href="../producten.html">Producten</a>
+            <a href="../portfolio.html">Portfolio</a>
+            <a href="../wie_zijn_we.html">Wie zijn we</a>
+            <a href="https://reklameklokje.be/" target="_blank">Reklameklokje</a>
+            <a href="../contact.html">Contact</a>
+        </nav>
+        <div class="toggle-container" onclick="toggleDarkMode()">
+            <span class="toggle-sun">☀️</span>
+            <div class="toggle-circle"></div>
+            <span class="toggle-moon">🌙</span>
+        </div>
+    </div>
+</header>
+<main class="main-content">
+    <section class="content">
+        <h1>Stansen</h1>
+        <img src="../../img/afwerkingspaginas/stansen.jpg" alt="Stansen">
+        <h2>Wat is Stansen?</h2>
+        <p>Stansen is een techniek waarbij een vorm uit een vel materiaal, zoals papier of karton, wordt gesneden met behulp van een stansmes. Deze techniek wordt vaak gebruikt om specifieke vormen of patronen uit te snijden, zoals verpakkingen, labels, en kaarten.</p>
+
+        <h2>Voordelen van Stansen</h2>
+        <ul>
+            <li><strong>Precisie:</strong> Stansen zorgt voor nauwkeurige en consistente sneden, zelfs bij complexe ontwerpen.</li>
+            <li><strong>Creativiteit:</strong> Met stansen kunnen unieke en op maat gemaakte vormen worden gecreëerd die anders moeilijk te bereiken zijn.</li>
+            <li><strong>Efficiëntie:</strong> Zodra de stansvorm is gemaakt, kan deze meerdere keren worden gebruikt, wat tijd en kosten bespaart bij grotere oplages.</li>
+        </ul>
+
+        <h2>Toepassingen van Stansen</h2>
+        <p>Stansen wordt veel gebruikt in de volgende sectoren:</p>
+        <ul>
+            <li><strong>Verpakkingen:</strong> Voor het creëren van op maat gemaakte dozen en verpakkingsmateriaal.</li>
+            <li><strong>Marketingmateriaal:</strong> Voor het maken van folders, kaarten en andere gedrukte materialen met speciale vormen.</li>
+            <li><strong>Labels:</strong> Voor het snijden van etiketten in specifieke vormen voor producten.</li>
+        </ul>
+
+        <h2>Hoe werkt Stansen?</h2>
+        <p>Bij stansen wordt een speciaal mes, dat in de gewenste vorm is gebogen, gebruikt om het materiaal te snijden. Dit mes wordt op een plaat gemonteerd en met druk op het materiaal aangebracht, waardoor de vorm wordt uitgesneden. Het resulterende stuk kan een op zichzelf staand product zijn of een onderdeel van een grotere productie.</p>
+
+        <h2>Belangrijke Overwegingen bij Stansen</h2>
+        <ul>
+            <li><strong>Ontwerpcomplexiteit:</strong> Houd rekening met de complexiteit van het ontwerp, aangezien zeer gedetailleerde sneden moeilijker uit te voeren kunnen zijn.</li>
+            <li><strong>Materiaalkeuze:</strong> Niet elk materiaal is geschikt voor stansen; sommige materialen kunnen scheuren of niet schoon gesneden worden.</li>
+            <li><strong>Productiekosten:</strong> De kosten voor het maken van de stansvorm kunnen hoog zijn, vooral voor unieke ontwerpen. Deze kosten kunnen echter worden terugverdiend bij grotere oplages.</li>
+        </ul>
+    </section>
+</main>
+<footer class="footer">
+    &copy; 2024 Drukkerij Qualigrafia bvba
+</footer>
+</body>
+</html>

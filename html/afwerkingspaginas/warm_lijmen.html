@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warm lijmen - Drukkerij Qualigrafia</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/afwerkingspaginas/afwerking.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+        // Functie om de donkere modus in te schakelen
+        function toggleDarkMode() {
+            var body = document.body;
+            body.classList.toggle('dark-mode');
+
+            // Donkere modus voorkeur opslaan in localStorage
+            if (body.classList.contains('dark-mode')) {
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                localStorage.setItem('darkMode', 'disabled');
+            }
+        }
+
+        // Donkere modus voorkeur toepassen bij het laden van de pagina
+        document.addEventListener('DOMContentLoaded', function() {
+            var darkMode = localStorage.getItem('darkMode');
+
+            if (darkMode === 'enabled') {
+                document.body.classList.add('dark-mode');
+            }
+        });
+    </script>
+</head>
+<body>
+<header class="header">
+    <div class="logo-nav-container">
+        <div class="logo">
+            <img src="../../img/logo.png" alt="Drukkerij Qualigrafia">
+        </div>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="../tech_info.html" class='active-page'>Technische Info</a>
+            <a href="../producten.html">Producten</a>
+            <a href="../portfolio.html">Portfolio</a>
+            <a href="../wie_zijn_we.html">Wie zijn we</a>
+            <a href="https://reklameklokje.be/" target="_blank">Reklameklokje</a>
+            <a href="../contact.html">Contact</a>
+        </nav>
+        <div class="toggle-container" onclick="toggleDarkMode()">
+            <span class="toggle-sun">☀️</span>
+            <div class="toggle-circle"></div>
+            <span class="toggle-moon">🌙</span>
+        </div>
+    </div>
+</header>
+<main class="main-content">
+    <section class="content">
+        <h1>Warm Lijmen</h1>
+        <img src="../../img/afwerkingspaginas/warm-lijmen.jpg" alt="Warm lijmen">
+        <h1>Wat is Warm Lijmen?</h1>
+        <h2>Definitie</h2>
+        <p><strong>Warm lijmen</strong> is een techniek waarbij smeltlijm wordt gebruikt om verschillende materialen aan elkaar te bevestigen. De lijm wordt verwarmd tot het smeltpunt en vervolgens op het oppervlak aangebracht. Zodra de lijm afkoelt, hardt deze uit en vormt een sterke binding tussen de materialen.</p>
+
+        <h2>Voordelen van Warm Lijmen</h2>
+        <ul>
+            <li><strong>Snelle hechting:</strong> De lijm hardt snel uit, waardoor het proces efficiënt verloopt.</li>
+            <li><strong>Sterke binding:</strong> Biedt een duurzame hechting die bestand is tegen veel fysieke belastingen.</li>
+            <li><strong>Veelzijdigheid:</strong> Kan worden toegepast op verschillende materialen, zoals papier, karton, en sommige kunststoffen.</li>
+        </ul>
+
+        <h2>Toepassingen van Warm Lijmen</h2>
+        <p>Warm lijmen wordt vaak gebruikt in de volgende situaties:</p>
+        <ul>
+            <li><strong>Boekbinding:</strong> Voor het lijmen van boekruggen bij zachte kaften.</li>
+            <li><strong>Verpakkingen:</strong> Voor het sluiten van dozen en andere verpakkingen.</li>
+            <li><strong>Marketingmateriaal:</strong> Voor het bevestigen van componenten zoals kaarten of monsters in folders.</li>
+        </ul>
+
+        <h2>Hoe Werkt Warm Lijmen?</h2>
+        <p>Warm lijmen begint met het verwarmen van de lijm tot een vloeibare toestand. De vloeibare lijm wordt vervolgens aangebracht op het oppervlak dat moet worden bevestigd. Na het aanbrengen koelt de lijm af en hardt deze uit, waardoor de materialen stevig aan elkaar hechten.</p>
+
+        <h2>Belangrijke Overwegingen bij Warm Lijmen</h2>
+        <ul>
+            <li><strong>Temperatuurcontrole:</strong> Het is belangrijk om de temperatuur van de lijm nauwkeurig te regelen om te voorkomen dat de lijm te dun of te dik wordt.</li>
+            <li><strong>Hechttijd:</strong> De tijd die de lijm nodig heeft om af te koelen en volledig uit te harden, kan variëren afhankelijk van de omgevingsomstandigheden.</li>
+            <li><strong>Compatibiliteit:</strong> Niet alle materialen zijn geschikt voor warm lijmen; zorg ervoor dat de materialen bestand zijn tegen de hitte van de lijm.</li>
+        </ul>
+    </section>
+</main>
+<footer class="footer">
+    &copy; 2024 Drukkerij Qualigrafia bvba
+</footer>
+</body>
+</html>

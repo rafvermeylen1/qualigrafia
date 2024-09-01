@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drukkerij Qualigrafia</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/tech_hulp.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+        // Function to toggle dark mode
+        function toggleDarkMode() {
+            var body = document.body;
+            body.classList.toggle('dark-mode');
+
+            // Save dark mode preference to localStorage
+            if (body.classList.contains('dark-mode')) {
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                localStorage.setItem('darkMode', 'disabled');
+            }
+        }
+
+        // Apply dark mode preference on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            var darkMode = localStorage.getItem('darkMode');
+
+            if (darkMode === 'enabled') {
+                document.body.classList.add('dark-mode');
+            }
+        });
+    </script>
+</head>
+<body>
+<header class="header">
+    <div class="logo-nav-container">
+        <div class="logo">
+            <img src="../img/logo.png" alt="Drukkerij Qualigrafia">
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="tech_info.html" class='active-page'>Technische Info</a>
+            <a href="producten.html">Producten</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="wie_zijn_we.html">Wie zijn we</a>
+            <a href="https://reklameklokje.be/" target="_blank">Reklameklokje</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="toggle-container" onclick="toggleDarkMode()">
+            <span class="toggle-sun">☀️</span>
+            <div class="toggle-circle"></div>
+            <span class="toggle-moon">🌙</span>
+        </div>
+    </div>
+</header>
+
+<main class="main-content">
+    <aside class="sidebar">
+        <div class="openingsuren">
+            <h2>Openingsuren</h2>
+            <ul>
+                <li>Maandag: 09:00 – 19:00</li>
+                <li>Dinsdag: 09:00 – 19:00</li>
+                <li>Woensdag: 09:00 – 19:00</li>
+                <li>Donderdag: 09:00 – 19:00</li>
+                <li>Vrijdag: 09:00 – 19:00</li>
+                <li>Zaterdag: 10:00 – 18:00</li>
+            </ul>
+        </div>
+        <div class="contacteer-ons">
+            <h2>Contacteer ons</h2>
+            <ul>
+                <li>Mechelbaan 167</li>
+                <li>2580 Beerzel (Putte)</li>
+                <li>tel. 015-75 54 72</li>
+                <li>fax 015-76 05 02</li>
+            </ul>
+        </div>
+    </aside>
+    <section class="content">
+        <h1>Technische info</h1>
+        <h2>Digitaal</h2>
+        <p>Onze moderne digitale drukkers kan formaten tot 48x33 cm aan en biedt de mogelijkheid om kleine tot middelgrote of variërende oplages te verwezenlijken in een razendsnel tempo.</p>
+        <p>Via onze grootformaat UV inkjet printer kunnen we beperkte oplages realiseren tot 100x300 cm.</p>
+
+        <h2>Conventioneel</h2>
+        <p>Wanneer het om grotere oplages gaat, of een uitzonderlijke papiersoort zal er gebruik worden gemaakt van onze offsetdrukpersen. Zo verwerken we regelmatig formaten tot 50x70 cm.</p>
+
+        <h2>Afwerking</h2>
+        <p>Drukkerij Qualigrafia beschikt tevens over een uitgebreid aantal afwerkingsmachines, wat een groot aantal mogelijkheden met zich meebrengt. Druk op één van de links om er meer over te weten te komen:</p>
+        <ul>
+            <li><a href="./afwerkingspaginas/rillen.html">Rillen</a></li>
+            <li><a href="./afwerkingspaginas/plooien.html">Plooien</a></li>
+            <li><a href="./afwerkingspaginas/perforeren.html">Perforeren</a></li>
+            <li><a href="./afwerkingspaginas/verzamelen.html">Verzamelen</a></li>
+            <li><a href="./afwerkingspaginas/snijden.html">Snijden</a></li>
+            <li><a href="./afwerkingspaginas/warm_lijmen.html">Warm lijmen</a></li>
+            <li><a href="./afwerkingspaginas/stansen.html">Stansen</a></li>
+        </ul>
+    </section>
+</main>
+
+<footer class="footer">
+    &copy; 2024 Drukkerij Qualigrafia bvba
+</footer>
+</body>
+</html>

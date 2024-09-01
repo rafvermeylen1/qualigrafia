@@ -1,0 +1,67 @@
+.main-content {
+    display: flex;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.content {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 20px;
+}
+
+.content h1 {
+    font-size: 40px;
+}
+
+.content h2 {
+    font-size: 32px;
+}
+
+.content ul {
+    font-size: 20px;
+}
+
+/* Algemene linkstijlen */
+.content a {
+    text-decoration: none;
+    color: #333; /* De standaard kleur van de links */
+    transition: color 0.3s;
+}
+
+header nav a:hover, .content a:hover {
+    color: #ff6600; /* Kleur bij hover */
+}
+
+.content a:visited {
+    color: #333; /* Kleur van bezochte links */
+}
+
+header nav a.active-page, .content a.active-page {
+    color: #ff6600;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* Donkere modus linkstijlen */
+body.dark-mode header nav a, body.dark-mode .content a {
+    color: #f4f4f9; /* Standaard kleur van de links in donkere modus */
+}
+
+body.dark-mode header nav a:hover, body.dark-mode .content a:hover {
+    color: #ff6600; /* Kleur bij hover in donkere modus */
+}
+
+body.dark-mode body.dark-mode .content a:visited {
+    color: #ff6600; /* Kleur van bezochte links in donkere modus */
+}
+
+body.dark-mode body.dark-mode .content a.active-page {
+    color: #ff6600;
+    text-decoration: underline;
+    font-weight: bold;
+}

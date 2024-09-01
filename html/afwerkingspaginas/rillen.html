@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rillen - Drukkerij Qualigrafia</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/afwerkingspaginas/afwerking.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+        // Function to toggle dark mode
+        function toggleDarkMode() {
+            var body = document.body;
+            body.classList.toggle('dark-mode');
+
+            // Save dark mode preference to localStorage
+            if (body.classList.contains('dark-mode')) {
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                localStorage.setItem('darkMode', 'disabled');
+            }
+        }
+
+        // Apply dark mode preference on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            var darkMode = localStorage.getItem('darkMode');
+
+            if (darkMode === 'enabled') {
+                document.body.classList.add('dark-mode');
+            }
+        });
+    </script>
+</head>
+<body>
+<header class="header">
+    <div class="logo-nav-container">
+        <div class="logo">
+            <img src="../../img/logo.png" alt="Drukkerij Qualigrafia">
+        </div>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="../tech_info.html" class='active-page'>Technische Info</a>
+            <a href="../producten.html">Producten</a>
+            <a href="../portfolio.html">Portfolio</a>
+            <a href="../wie_zijn_we.html">Wie zijn we</a>
+            <a href="https://reklameklokje.be/" target="_blank">Reklameklokje</a>
+            <a href="../contact.html">Contact</a>
+        </nav>
+        <div class="toggle-container" onclick="toggleDarkMode()">
+            <span class="toggle-sun">☀️</span>
+            <div class="toggle-circle"></div>
+            <span class="toggle-moon">🌙</span>
+        </div>
+    </div>
+</header>
+<main class="main-content">
+    <section class="content">
+        <h1>Rillen</h1>
+        <img src="../../img/afwerkingspaginas/rillen.jpg" alt="Rillen">
+        <h1>Wat is Rillen?</h1>
+        <h2>Definitie</h2>
+        <p><strong>Rillen</strong> is een druktechniek waarbij een lijn in het papier wordt geperst om een vouw te vergemakkelijken. Dit proces creëert een indruk in het papier zonder het te snijden of te perforeren. Het belangrijkste doel van rillen is om ervoor te zorgen dat het papier netjes en gemakkelijk kan worden gevouwen zonder te scheuren of te barsten, vooral bij dikker papier of karton.</p>
+
+        <h2>Voordelen van Rillen</h2>
+        <ul>
+            <li><strong>Nettere Vouwen:</strong> Voorkomt het scheuren of breken van het papier bij het vouwen.</li>
+            <li><strong>Professionele Afwerking:</strong> Zorgt voor een strakke, nette vouw die er professioneel uitziet.</li>
+            <li><strong>Gebruiksgemak:</strong> Maakt het eenvoudiger om dikke of stijve materialen te vouwen.</li>
+        </ul>
+
+        <h2>Toepassingen van Rillen</h2>
+        <p>Rillen wordt vaak gebruikt voor:</p>
+        <ul>
+            <li><strong>Folders en Brochures:</strong> Voor een nette vouwlijn in het midden.</li>
+            <li><strong>Kaarten:</strong> Zodat uitnodigingen of wenskaarten gemakkelijk gevouwen kunnen worden.</li>
+            <li><strong>Verpakkingen:</strong> Voor het maken van strakke en stevige vouwen in verpakkingsmateriaal.</li>
+            <li><strong>Boekomslagen:</strong> Om een scherpe en nette vouw te krijgen bij de rug van een boek.</li>
+        </ul>
+
+        <h2>Hoe Werkt Rillen?</h2>
+        <p>Tijdens het rillen wordt het papier tussen een rilmes en een rilplaat geplaatst. Het rilmes drukt een groef in het papier, waardoor een verzwakte lijn ontstaat waarlangs het papier kan worden gevouwen. Deze techniek kan zowel handmatig als machinaal worden uitgevoerd, afhankelijk van de oplage en het type materiaal.</p>
+
+        <h2>Belangrijke Overwegingen bij Rillen</h2>
+        <ul>
+            <li><strong>Dikte van het Papier:</strong> Dikker papier vereist meestal een diepere ril om een nette vouw te garanderen.</li>
+            <li><strong>Type Materiaal:</strong> Verschillende papiersoorten reageren anders op rillen, dus het is belangrijk om de juiste instellingen te gebruiken.</li>
+            <li><strong>Positie van de Ril:</strong> De ril moet precies op de gewenste vouwlijn worden aangebracht om een symmetrische en esthetische vouw te krijgen.</li>
+        </ul>
+    </section>
+</main>
+<footer class="footer">
+    &copy; 2024 Drukkerij Qualigrafia bvba
+</footer>
+</body>
+</html>

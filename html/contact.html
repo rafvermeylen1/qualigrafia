@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Drukkerij Qualigrafia</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+        // Function to toggle dark mode
+        function toggleDarkMode() {
+            var body = document.body;
+            body.classList.toggle('dark-mode');
+
+            // Save dark mode preference to localStorage
+            if (body.classList.contains('dark-mode')) {
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                localStorage.setItem('darkMode', 'disabled');
+            }
+        }
+
+        // Apply dark mode preference on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            var darkMode = localStorage.getItem('darkMode');
+
+            if (darkMode === 'enabled') {
+                document.body.classList.add('dark-mode');
+            }
+        });
+    </script>
+</head>
+<body>
+<header class="header">
+    <div class="logo-nav-container">
+        <div class="logo">
+            <img src="../img/logo.png" alt="Drukkerij Qualigrafia">
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="tech_info.html">Technische Info</a>
+            <a href="producten.html">Producten</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="wie_zijn_we.html">Wie zijn we</a>
+            <a href="https://reklameklokje.be/" target="_blank">Reklameklokje</a>
+            <a href="contact.html" class='active-page'>Contact</a>
+        </nav>
+        <div class="toggle-container" onclick="toggleDarkMode()">
+            <span class="toggle-sun">☀️</span>
+            <div class="toggle-circle"></div>
+            <span class="toggle-moon">🌙</span>
+        </div>
+    </div>
+</header>
+<main class="main-content">
+    <section class="content">
+        <h1>Contacteer ons</h1>
+        <p>Heeft u vragen of wilt u meer informatie? Twijfel niet om ons eens op te bellen, te bezoeken of een mailtje te versturen!.</p>
+
+        <div class="contact-details">
+            <h2>Onze locatie</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2428.8653427649744!2d4.643238615974369!3d51.01766967955898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c15d402d7c6f43%3A0xab1b5b70b998db7d!2sMechelbaan%20167%2C%202580%20Putte!5e0!3m2!1sen!2sbe!4v1693414729938!5m2!1sen!2sbe"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="contact-info">
+            <h2>Contactinformatie</h2>
+            <ul>
+                <li>Adres: Mechelbaan 167, 2580 Beerzel (Putte)</li>
+                <li>Telefoon: 015-75 54 72</li>
+                <li>Fax: 015-76 05 02</li>
+                <li>E-mail: info@drukkerijqualigrafia.be</li>
+            </ul>
+        </div>
+
+        <div class="openingsuren">
+            <h2>Openingsuren</h2>
+            <ul>
+                <li>Maandag: 09:00 – 19:00</li>
+                <li>Dinsdag: 09:00 – 19:00</li>
+                <li>Woensdag: 09:00 – 19:00</li>
+                <li>Donderdag: 09:00 – 19:00</li>
+                <li>Vrijdag: 09:00 – 19:00</li>
+                <li>Zaterdag: 10:00 – 18:00</li>
+            </ul>
+        </div>
+    </section>
+</main>
+<footer class="footer">
+    &copy; 2024 Drukkerij Qualigrafia bvba
+</footer>
+</body>
+</html>

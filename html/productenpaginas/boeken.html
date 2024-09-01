@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boeken - Drukkerij Qualigrafia</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/afwerkingspaginas/afwerking.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+        // Functie om de donkere modus in te schakelen
+        function toggleDarkMode() {
+            var body = document.body;
+            body.classList.toggle('dark-mode');
+
+            // Donkere modus voorkeur opslaan in localStorage
+            if (body.classList.contains('dark-mode')) {
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                localStorage.setItem('darkMode', 'disabled');
+            }
+        }
+
+        // Donkere modus voorkeur toepassen bij het laden van de pagina
+        document.addEventListener('DOMContentLoaded', function() {
+            var darkMode = localStorage.getItem('darkMode');
+
+            if (darkMode === 'enabled') {
+                document.body.classList.add('dark-mode');
+            }
+        });
+    </script>
+</head>
+<body>
+<header class="header">
+    <div class="logo-nav-container">
+        <div class="logo">
+            <img src="../../img/logo.png" alt="Drukkerij Qualigrafia">
+        </div>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="../tech_info.html">Technische Info</a>
+            <a href="../producten.html" class='active-page'>Producten</a>
+            <a href="../portfolio.html">Portfolio</a>
+            <a href="../wie_zijn_we.html">Wie zijn we</a>
+            <a href="https://reklameklokje.be/" target="_blank">Reklameklokje</a>
+            <a href="../contact.html">Contact</a>
+        </nav>
+        <div class="toggle-container" onclick="toggleDarkMode()">
+            <span class="toggle-sun">☀️</span>
+            <div class="toggle-circle"></div>
+            <span class="toggle-moon">🌙</span>
+        </div>
+    </div>
+</header>
+<main class="main-content">
+    <section class="content">
+        <h1>Boeken</h1>
+        <img src="../../img/productenpaginas/boeken.jpg" alt="Boeken">
+        <h1>Wat zijn Boeken?</h1>
+        <h2>Definitie</h2>
+        <p><strong>Boeken</strong> zijn gedrukte of gebonden documenten die tekst, afbeeldingen of een combinatie van beide bevatten. Ze worden gebruikt voor verschillende doeleinden, waaronder literatuur, studie, referentie, en entertainment. Boeken kunnen in verschillende formaten en uitvoeringen worden geproduceerd, van paperbacks tot luxe hardcovers.</p>
+
+        <h2>Voordelen van Boeken</h2>
+        <ul>
+            <li><strong>Duurzaamheid:</strong> Boeken zijn fysiek duurzaam en kunnen generaties lang worden bewaard.</li>
+            <li><strong>Hoge Perceptiewaarde:</strong> Ze hebben een hoge perceptiewaarde, vooral bij zorgvuldig ontwerp en afwerking.</li>
+            <li><strong>Veelzijdigheid:</strong> Geschikt voor verschillende doeleinden zoals educatie, vermaak, en artistieke expressie.</li>
+        </ul>
+
+        <h2>Toepassingen van Boeken</h2>
+        <p>Boeken worden vaak gebruikt voor:</p>
+        <ul>
+            <li><strong>Literatuur:</strong> Romans, gedichten, en andere fictiewerken.</li>
+            <li><strong>Studieboeken:</strong> Educatieve en academische teksten voor scholen en universiteiten.</li>
+            <li><strong>Naslagwerken:</strong> Encyclopedieën, woordenboeken, en technische handleidingen.</li>
+            <li><strong>Kunstboeken:</strong> Boeken met hoogwaardige reproducties van kunstwerken of fotografie.</li>
+        </ul>
+
+        <h2>Hoe Werkt het Drukken van Boeken?</h2>
+        <p>Het drukken van boeken omvat verschillende stappen, waaronder ontwerp, prepress (voorbereiding van de bestanden), drukwerk, en afwerking (zoals binden en lamineren). Elk boekproject is uniek en vereist maatwerk om aan de specifieke eisen van de klant te voldoen.</p>
+
+        <h2>Belangrijke Overwegingen bij het Ontwerpen van Boeken</h2>
+        <ul>
+            <li><strong>Formaat en Layout:</strong> Het formaat en de lay-out van een boek bepalen de leeservaring en de productiekosten.</li>
+            <li><strong>Omslagontwerp:</strong> Een aantrekkelijk omslagontwerp is essentieel om de aandacht van potentiële lezers te trekken.</li>
+            <li><strong>Bindtechniek:</strong> De keuze van bindtechniek beïnvloedt de duurzaamheid en het uiterlijk van het boek.</li>
+        </ul>
+    </section>
+</main>
+<footer class="footer">
+    &copy; 2024 Drukkerij Qualigrafia bvba
+</footer>
+</body>
+</html>

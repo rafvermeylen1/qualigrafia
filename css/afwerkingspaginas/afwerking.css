@@ -1,0 +1,43 @@
+/* Nieuwe stijlen voor de technische info pagina */
+.main-content {
+    display: flex;
+    padding: 40px;
+}
+
+.content {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.content h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.content h2 {
+    font-size: 32px;
+}
+
+.content p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.content img {
+    width: 400px;
+    height: 200px;
+}
+
+.content ul {
+    list-style: disc;
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+.content ul li {
+    padding: 5px 0;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Folders - Drukkerij Qualigrafia</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/afwerkingspaginas/afwerking.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+        // Functie om de donkere modus in te schakelen
+        function toggleDarkMode() {
+            var body = document.body;
+            body.classList.toggle('dark-mode');
+
+            // Donkere modus voorkeur opslaan in localStorage
+            if (body.classList.contains('dark-mode')) {
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                localStorage.setItem('darkMode', 'disabled');
+            }
+        }
+
+        // Donkere modus voorkeur toepassen bij het laden van de pagina
+        document.addEventListener('DOMContentLoaded', function() {
+            var darkMode = localStorage.getItem('darkMode');
+
+            if (darkMode === 'enabled') {
+                document.body.classList.add('dark-mode');
+            }
+        });
+    </script>
+</head>
+<body>
+<header class="header">
+    <div class="logo-nav-container">
+        <div class="logo">
+            <img src="../../img/logo.png" alt="Drukkerij Qualigrafia">
+        </div>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="../tech_info.html">Technische Info</a>
+            <a href="../producten.html" class='active-page'>Producten</a>
+            <a href="../portfolio.html">Portfolio</a>
+            <a href="../wie_zijn_we.html">Wie zijn we</a>
+            <a href="https://reklameklokje.be/" target="_blank">Reklameklokje</a>
+            <a href="../contact.html">Contact</a>
+        </nav>
+        <div class="toggle-container" onclick="toggleDarkMode()">
+            <span class="toggle-sun">☀️</span>
+            <div class="toggle-circle"></div>
+            <span class="toggle-moon">🌙</span>
+        </div>
+    </div>
+</header>
+<main class="main-content">
+    <section class="content">
+        <h1>Folders</h1>
+        <img src="../../img/productenpaginas/folders.jpg" alt="Folders">
+        <h1>Wat zijn Folders?</h1>
+        <h2>Definitie</h2>
+        <p><strong>Folders</strong> zijn gedrukte marketingmaterialen die vaak worden gevouwen om meerdere panelen te creëren. Ze worden gebruikt om informatie over producten, diensten of evenementen op een compacte en overzichtelijke manier te presenteren.</p>
+
+        <h2>Voordelen van Folders</h2>
+        <ul>
+            <li><strong>Compact en Overzichtelijk:</strong> Door de vouwtechniek passen veel informatie en afbeeldingen in een handig formaat.</li>
+            <li><strong>Professionele Uitstraling:</strong> Folders geven een nette en georganiseerde presentatie van uw boodschap.</li>
+            <li><strong>Veelzijdigheid:</strong> Ze kunnen worden aangepast aan verschillende marketingdoeleinden, zoals productintroducties, evenementen, of bedrijfspresentaties.</li>
+        </ul>
+
+        <h2>Toepassingen van Folders</h2>
+        <p>Folders worden vaak gebruikt voor:</p>
+        <ul>
+            <li><strong>Bedrijfspresentaties:</strong> Om een overzicht van het bedrijf, producten of diensten te geven.</li>
+            <li><strong>Evenementen:</strong> Voor het promoten van evenementen, beurzen of conferenties.</li>
+            <li><strong>Productbrochures:</strong> Voor het gedetailleerd presenteren van producten of diensten.</li>
+            <li><strong>Informatieve Gidsen:</strong> Voor het verstrekken van stapsgewijze instructies of toeristische informatie.</li>
+        </ul>
+
+        <h2>Hoe Werkt het Ontwerpen van Folders?</h2>
+        <p>Het ontwerpen van een folder begint met het bepalen van het formaat en het aantal vouwen. Veelgebruikte formaten zijn drieluiken of vierluiken. Het ontwerp moet een duidelijke structuur hebben, met een logische volgorde van informatie en aantrekkelijke visuals. Folders worden vaak gedrukt op stevig papier en kunnen worden afgewerkt met een glans- of matte coating voor extra bescherming en een premium uitstraling.</p>
+
+        <h2>Belangrijke Overwegingen bij het Ontwerpen van Folders</h2>
+        <ul>
+            <li><strong>Vouwopties:</strong> Kies het juiste aantal vouwen en het formaat dat past bij de hoeveelheid informatie die je wilt presenteren.</li>
+            <li><strong>Lay-out en Structuur:</strong> Zorg voor een logische volgorde van informatie en een aantrekkelijke presentatie.</li>
+            <li><strong>Papierkwaliteit:</strong> Kies stevig papier dat lang meegaat en een professionele uitstraling biedt.</li>
+        </ul>
+    </section>
+</main>
+<footer class="footer">
+    &copy; 2024 Drukkerij Qualigrafia bvba
+</footer>
+</body>
+</html>

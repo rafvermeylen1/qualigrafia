@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snijden - Drukkerij Qualigrafia</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/afwerkingspaginas/afwerking.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+        // Functie om de donkere modus in te schakelen
+        function toggleDarkMode() {
+            var body = document.body;
+            body.classList.toggle('dark-mode');
+
+            // Donkere modus voorkeur opslaan in localStorage
+            if (body.classList.contains('dark-mode')) {
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                localStorage.setItem('darkMode', 'disabled');
+            }
+        }
+
+        // Donkere modus voorkeur toepassen bij het laden van de pagina
+        document.addEventListener('DOMContentLoaded', function() {
+            var darkMode = localStorage.getItem('darkMode');
+
+            if (darkMode === 'enabled') {
+                document.body.classList.add('dark-mode');
+            }
+        });
+    </script>
+</head>
+<body>
+<header class="header">
+    <div class="logo-nav-container">
+        <div class="logo">
+            <img src="../../img/logo.png" alt="Drukkerij Qualigrafia">
+        </div>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="../tech_info.html" class='active-page'>Technische Info</a>
+            <a href="../producten.html">Producten</a>
+            <a href="../portfolio.html">Portfolio</a>
+            <a href="../wie_zijn_we.html">Wie zijn we</a>
+            <a href="https://reklameklokje.be/" target="_blank">Reklameklokje</a>
+            <a href="../contact.html">Contact</a>
+        </nav>
+        <div class="toggle-container" onclick="toggleDarkMode()">
+            <span class="toggle-sun">☀️</span>
+            <div class="toggle-circle"></div>
+            <span class="toggle-moon">🌙</span>
+        </div>
+    </div>
+</header>
+<main class="main-content">
+    <section class="content">
+        <h1>Snijden</h1>
+        <img src="../../img/afwerkingspaginas/snijden.jpg" alt="Snijden">
+        <h1>Wat is Snijden?</h1>
+        <h2>Definitie</h2>
+        <p><strong>Snijden</strong> is een essentiële afwerkingstechniek in de drukkerijwereld waarbij papier of ander materiaal op een specifieke maat wordt gesneden. Het proces zorgt ervoor dat de randen van het drukwerk netjes en gelijkmatig zijn, wat cruciaal is voor de professionele uitstraling van het eindproduct.</p>
+
+        <h2>Voordelen van Snijden</h2>
+        <ul>
+            <li><strong>Precisie:</strong> Zorgt voor exact gesneden randen en hoeken, wat belangrijk is voor de consistentie van het drukwerk.</li>
+            <li><strong>Esthetiek:</strong> Biedt een nette en professionele afwerking aan het drukwerk.</li>
+            <li><strong>Veelzijdigheid:</strong> Kan worden toegepast op een breed scala aan materialen, van dun papier tot dik karton.</li>
+        </ul>
+
+        <h2>Toepassingen van Snijden</h2>
+        <p>Snijden wordt vaak gebruikt voor:</p>
+        <ul>
+            <li><strong>Visitekaartjes:</strong> Voor het creëren van precieze en gelijkmatige randen.</li>
+            <li><strong>Brochures en Folders:</strong> Om ervoor te zorgen dat alle pagina's gelijkmatig zijn bijgesneden.</li>
+            <li><strong>Boekblokken:</strong> Voor het op maat snijden van de pagina’s na het binden.</li>
+            <li><strong>Verpakkingen:</strong> Voor het snijden van verpakkingsmaterialen in de juiste vormen en maten.</li>
+        </ul>
+
+        <h2>Hoe Werkt Snijden?</h2>
+        <p>Snijden gebeurt meestal met behulp van snijmachines die in staat zijn om met grote precisie te werken. Het materiaal wordt in de machine geplaatst, waarbij het mes exact de gewenste maat snijdt. Bij complexe vormen of patronen kan ook gebruik worden gemaakt van stansmachines, die het materiaal uitstansen in plaats van snijden.</p>
+
+        <h2>Belangrijke Overwegingen bij Snijden</h2>
+        <ul>
+            <li><strong>Dikte van het Materiaal:</strong> Dikker materiaal vereist een krachtigere machine en kan meer slijtage aan de messen veroorzaken.</li>
+            <li><strong>Precisie:</strong> Kleine afwijkingen in het snijden kunnen grote gevolgen hebben voor de afwerking, vooral bij producten zoals visitekaartjes of brochures.</li>
+            <li><strong>Snijkant:</strong> Het is belangrijk dat de snijkanten glad en vrij van bramen zijn voor een nette afwerking.</li>
+        </ul>
+    </section>
+</main>
+<footer class="footer">
+    &copy; 2024 Drukkerij Qualigrafia bvba
+</footer>
+</body>
+</html>

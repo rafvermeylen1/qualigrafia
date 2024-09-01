@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perforeren - Drukkerij Qualigrafia</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/afwerkingspaginas/afwerking.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+        // Functie om de donkere modus in te schakelen
+        function toggleDarkMode() {
+            var body = document.body;
+            body.classList.toggle('dark-mode');
+
+            // Donkere modus voorkeur opslaan in localStorage
+            if (body.classList.contains('dark-mode')) {
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                localStorage.setItem('darkMode', 'disabled');
+            }
+        }
+
+        // Donkere modus voorkeur toepassen bij het laden van de pagina
+        document.addEventListener('DOMContentLoaded', function() {
+            var darkMode = localStorage.getItem('darkMode');
+
+            if (darkMode === 'enabled') {
+                document.body.classList.add('dark-mode');
+            }
+        });
+    </script>
+</head>
+<body>
+<header class="header">
+    <div class="logo-nav-container">
+        <div class="logo">
+            <img src="../../img/logo.png" alt="Drukkerij Qualigrafia">
+        </div>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="../tech_info.html" class='active-page'>Technische Info</a>
+            <a href="../producten.html">Producten</a>
+            <a href="../portfolio.html">Portfolio</a>
+            <a href="../wie_zijn_we.html">Wie zijn we</a>
+            <a href="https://reklameklokje.be/" target="_blank">Reklameklokje</a>
+            <a href="../contact.html">Contact</a>
+        </nav>
+        <div class="toggle-container" onclick="toggleDarkMode()">
+            <span class="toggle-sun">☀️</span>
+            <div class="toggle-circle"></div>
+            <span class="toggle-moon">🌙</span>
+        </div>
+    </div>
+</header>
+<main class="main-content">
+    <section class="content">
+        <h1>Perforeren</h1>
+        <img src="../../img/afwerkingspaginas/perforeren.jpg" alt="Perforeren">
+        <h1>Wat is Perforeren?</h1>
+        <h2>Definitie</h2>
+        <p><strong>Perforeren</strong> is een druktechniek waarbij een reeks kleine gaatjes in het papier wordt gemaakt. Dit maakt het mogelijk om delen van het papier gemakkelijk af te scheuren, zoals bij coupons, formulieren of tickets. Het proces is ontworpen om een schone en gecontroleerde scheurlijn te creëren, zonder dat het papier verder scheurt of beschadigt.</p>
+
+        <h2>Voordelen van Perforeren</h2>
+        <ul>
+            <li><strong>Handig in Gebruik:</strong> Maakt het eenvoudig om delen van een document af te scheuren zonder schaar of messen.</li>
+            <li><strong>Professionele Presentatie:</strong> Creëert een nette, uniforme scheurlijn voor een professionele uitstraling.</li>
+            <li><strong>Flexibiliteit:</strong> Kan worden toegepast op verschillende materialen, zoals papier, karton of zelfs plastic.</li>
+        </ul>
+
+        <h2>Toepassingen van Perforeren</h2>
+        <p>Perforeren wordt vaak gebruikt voor:</p>
+        <ul>
+            <li><strong>Tickets:</strong> Voor eenvoudig afscheurbare toegangskaarten.</li>
+            <li><strong>Coupons:</strong> Voor het eenvoudig afscheuren van kortingsbonnen of vouchers.</li>
+            <li><strong>Formulieren:</strong> Voor secties die moeten worden ingevuld en vervolgens afgescheurd, zoals bij ontvangstbewijzen.</li>
+            <li><strong>Verpakkingen:</strong> Voor een gemakkelijke opening van verpakkingen of zakjes.</li>
+        </ul>
+
+        <h2>Hoe Werkt Perforeren?</h2>
+        <p>Bij het perforeren worden kleine gaatjes in een rechte lijn door het papier geponst, meestal door middel van een machinale stans. Dit creëert een lijn van zwakke punten langs welke het papier gemakkelijk kan worden gescheurd. De grootte en afstand van de perforaties kunnen worden aangepast afhankelijk van de toepassing.</p>
+
+        <h2>Belangrijke Overwegingen bij Perforeren</h2>
+        <ul>
+            <li><strong>Afstand tussen Perforaties:</strong> De ruimte tussen de gaatjes bepaalt hoe gemakkelijk het papier kan worden afgescheurd.</li>
+            <li><strong>Materiaal:</strong> Verschillende materialen kunnen verschillende perforatietechnieken vereisen voor optimale resultaten.</li>
+            <li><strong>Precisie:</strong> De perforatielijn moet nauwkeurig zijn om ervoor te zorgen dat het papier op de juiste plaats scheurt.</li>
+        </ul>
+    </section>
+</main>
+<footer class="footer">
+    &copy; 2024 Drukkerij Qualigrafia bvba
+</footer>
+</body>
+</html>

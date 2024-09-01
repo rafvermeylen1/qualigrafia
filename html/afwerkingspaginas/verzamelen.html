@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verzamelen - Drukkerij Qualigrafia</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/afwerkingspaginas/afwerking.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+        // Functie om de donkere modus in te schakelen
+        function toggleDarkMode() {
+            var body = document.body;
+            body.classList.toggle('dark-mode');
+
+            // Donkere modus voorkeur opslaan in localStorage
+            if (body.classList.contains('dark-mode')) {
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                localStorage.setItem('darkMode', 'disabled');
+            }
+        }
+
+        // Donkere modus voorkeur toepassen bij het laden van de pagina
+        document.addEventListener('DOMContentLoaded', function() {
+            var darkMode = localStorage.getItem('darkMode');
+
+            if (darkMode === 'enabled') {
+                document.body.classList.add('dark-mode');
+            }
+        });
+    </script>
+</head>
+<body>
+<header class="header">
+    <div class="logo-nav-container">
+        <div class="logo">
+            <img src="../../img/logo.png" alt="Drukkerij Qualigrafia">
+        </div>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="../tech_info.html" class='active-page'>Technische Info</a>
+            <a href="../producten.html">Producten</a>
+            <a href="../portfolio.html">Portfolio</a>
+            <a href="../wie_zijn_we.html">Wie zijn we</a>
+            <a href="https://reklameklokje.be/" target="_blank">Reklameklokje</a>
+            <a href="../contact.html">Contact</a>
+        </nav>
+        <div class="toggle-container" onclick="toggleDarkMode()">
+            <span class="toggle-sun">☀️</span>
+            <div class="toggle-circle"></div>
+            <span class="toggle-moon">🌙</span>
+        </div>
+    </div>
+</header>
+<main class="main-content">
+    <section class="content">
+        <h1>Verzamelen</h1>
+        <img src="../../img/afwerkingspaginas/verzamelen.jpg" alt="Verzamelen">
+        <h1>Wat is Verzamelen?</h1>
+        <h2>Definitie</h2>
+        <p><strong>Verzamelen</strong> is een afwerkingstechniek waarbij meerdere pagina’s of katernen in een specifieke volgorde worden verzameld om een complete set te vormen. Dit proces is essentieel in de productie van bijvoorbeeld boeken, brochures, en andere meerbladige documenten, waar de volgorde van de pagina’s cruciaal is voor het eindresultaat.</p>
+
+        <h2>Voordelen van Verzamelen</h2>
+        <ul>
+            <li><strong>Accurate Paginavolgorde:</strong> Zorgt ervoor dat de pagina’s in de juiste volgorde worden geplaatst, wat essentieel is voor een goed leesbare publicatie.</li>
+            <li><strong>Efficiëntie:</strong> Maakt het mogelijk om snel en nauwkeurig meerdere pagina’s te groeperen.</li>
+            <li><strong>Professionele Afwerking:</strong> Geeft het eindproduct een professionele uitstraling door de correcte samenstelling van het document.</li>
+        </ul>
+
+        <h2>Toepassingen van Verzamelen</h2>
+        <p>Verzamelen wordt vaak gebruikt voor:</p>
+        <ul>
+            <li><strong>Boeken:</strong> Om de verschillende katernen in de juiste volgorde te plaatsen.</li>
+            <li><strong>Brochures:</strong> Voor het samenstellen van meerbladige documenten in de juiste volgorde.</li>
+            <li><strong>Tijdschriften:</strong> Om alle pagina’s op de juiste manier te rangschikken voordat ze worden gebonden of geniet.</li>
+            <li><strong>Folders:</strong> Voor het correct ordenen van gevouwen pagina's in meerdelige folders.</li>
+        </ul>
+
+        <h2>Hoe Werkt Verzamelen?</h2>
+        <p>Bij het verzamelen worden de pagina’s of katernen in een specifieke volgorde geplaatst, meestal door een verzamelmachine. Deze machines kunnen grote hoeveelheden papier snel en nauwkeurig verwerken, wat het productieproces van boeken, brochures en andere gedrukte materialen efficiënter maakt.</p>
+
+        <h2>Belangrijke Overwegingen bij Verzamelen</h2>
+        <ul>
+            <li><strong>Paginavolgorde:</strong> Het is cruciaal om ervoor te zorgen dat de pagina’s in de juiste volgorde worden geplaatst om fouten in het eindproduct te voorkomen.</li>
+            <li><strong>Papiersoort:</strong> Verschillende papiersoorten kunnen invloed hebben op hoe goed de pagina’s verzameld worden, vooral als ze erg dun of dik zijn.</li>
+            <li><strong>Verzamelmethode:</strong> Handmatig verzamelen is mogelijk bij kleine oplages, maar machinaal verzamelen is efficiënter voor grotere oplages.</li>
+        </ul>
+    </section>
+</main>
+<footer class="footer">
+    &copy; 2024 Drukkerij Qualigrafia bvba
+</footer>
+</body>
+</html>

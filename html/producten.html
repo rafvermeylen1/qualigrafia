@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Drukkerij Qualigrafia</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/tech_hulp.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+        // Function to toggle dark mode
+        function toggleDarkMode() {
+            var body = document.body;
+            body.classList.toggle('dark-mode');
+
+            // Save dark mode preference to localStorage
+            if (body.classList.contains('dark-mode')) {
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                localStorage.setItem('darkMode', 'disabled');
+            }
+        }
+
+        // Apply dark mode preference on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            var darkMode = localStorage.getItem('darkMode');
+
+            if (darkMode === 'enabled') {
+                document.body.classList.add('dark-mode');
+            }
+        });
+    </script>
+</head>
+<body>
+<header class="header">
+    <div class="logo-nav-container">
+        <div class="logo">
+            <img src="../img/logo.png" alt="Drukkerij Qualigrafia">
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="tech_info.html">Technische Info</a>
+            <a href="producten.html" class='active-page'>Producten</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="wie_zijn_we.html">Wie zijn we</a>
+            <a href="https://reklameklokje.be/" target="_blank">Reklameklokje</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="toggle-container" onclick="toggleDarkMode()">
+            <span class="toggle-sun">☀️</span>
+            <div class="toggle-circle"></div>
+            <span class="toggle-moon">🌙</span>
+        </div>
+    </div>
+</header>
+
+<main class="main-content">
+    <aside class="sidebar">
+        <div class="openingsuren">
+            <h2>Openingsuren</h2>
+            <ul>
+                <li>Maandag: 09:00 – 19:00</li>
+                <li>Dinsdag: 09:00 – 19:00</li>
+                <li>Woensdag: 09:00 – 19:00</li>
+                <li>Donderdag: 09:00 – 19:00</li>
+                <li>Vrijdag: 09:00 – 19:00</li>
+                <li>Zaterdag: 10:00 – 18:00</li>
+            </ul>
+        </div>
+        <div class="contacteer-ons">
+            <h2>Contacteer ons</h2>
+            <ul>
+                <li>Mechelbaan 167</li>
+                <li>2580 Beerzel (Putte)</li>
+                <li>tel. 015-75 54 72</li>
+                <li>fax 015-76 05 02</li>
+            </ul>
+        </div>
+    </aside>
+    <section class="content">
+        <h1>Producten</h1>
+        <h2>Onze Mogelijkheden</h2>
+        <p>
+            Dankzij ons uitgebreid machinepark zijn we in staat om een uitgebreid aantal mogelijkheden aan te bieden,
+            of het nu gaat om kleine of grote oplages. Zo kunnen we elk order aanpassen aan uw persoonlijke noden en voorkeuren.
+        </p>
+
+        <p>
+            Geen order is ons te vreemd, zolang het maar op vel papier staat. Even een kleine greep uit onze mogelijkheden:
+        </p>
+        <ul>
+            <li><a href="./productenpaginas/kaartjes.html">Kaartjes</a></li>
+            <li><a href="./productenpaginas/briefhoofden.html">Briefhoofden</a></li>
+            <li><a href="./productenpaginas/brochures.html">Brochures</a></li>
+            <li><a href="./productenpaginas/boeken.html">Boeken</a></li>
+            <li><a href="./productenpaginas/strips.html">Strips</a></li>
+            <li><a href="./productenpaginas/tijdschriften.html">Tijdschriften</a></li>
+            <li><a href="./productenpaginas/folders.html">Folders (2-, 3-, ... luiken)</a></li>
+            <li><a href="./productenpaginas/affiches.html">Affiches</a></li>
+            <li><a href="./productenpaginas/flyers.html">Flyers</a></li>
+            <li><a href="./productenpaginas/stickers.html">Stickers</a></li>
+            <li><a href="./productenpaginas/omslagen.html">Omslagen</a></li>
+            <li>...</li>
+        </ul>
+    </section>
+</main>
+
+<footer class="footer">
+    &copy; 2024 Drukkerij Qualigrafia bvba
+</footer>
+</body>
+</html>

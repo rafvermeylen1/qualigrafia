@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Drukkerij Qualigrafia</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/portfolio.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+        // Function to toggle dark mode
+        function toggleDarkMode() {
+            var body = document.body;
+            body.classList.toggle('dark-mode');
+
+            // Save dark mode preference to localStorage
+            if (body.classList.contains('dark-mode')) {
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                localStorage.setItem('darkMode', 'disabled');
+            }
+        }
+
+        // Apply dark mode preference on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            var darkMode = localStorage.getItem('darkMode');
+
+            if (darkMode === 'enabled') {
+                document.body.classList.add('dark-mode');
+            }
+        });
+    </script>
+</head>
+<body>
+<header class="header">
+    <div class="logo-nav-container">
+        <div class="logo">
+            <img src="../img/logo.png" alt="Drukkerij Qualigrafia">
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="tech_info.html">Technische Info</a>
+            <a href="producten.html">Producten</a>
+            <a href="portfolio.html" class='active-page'>Portfolio</a>
+            <a href="wie_zijn_we.html">Wie zijn we</a>
+            <a href="https://reklameklokje.be/" target="_blank">Reklameklokje</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="toggle-container" onclick="toggleDarkMode()">
+            <span class="toggle-sun">☀️</span>
+            <div class="toggle-circle"></div>
+            <span class="toggle-moon">🌙</span>
+        </div>
+    </div>
+</header>
+<main class="main-content">
+    <aside class="sidebar">
+        <div class="openingsuren">
+            <h2>Openingsuren</h2>
+            <ul>
+                <li>Maandag: 09:00 – 19:00</li>
+                <li>Dinsdag: 09:00 – 19:00</li>
+                <li>Woensdag: 09:00 – 19:00</li>
+                <li>Donderdag: 09:00 – 19:00</li>
+                <li>Vrijdag: 09:00 – 19:00</li>
+                <li>Zaterdag: 10:00 – 18:00</li>
+            </ul>
+        </div>
+        <div class="contacteer-ons">
+            <h2>Contacteer ons</h2>
+            <ul>
+                <li>Mechelbaan 167</li>
+                <li>2580 Beerzel (Putte)</li>
+                <li>tel. 015-75 54 72</li>
+                <li>fax 015-76 05 02</li>
+            </ul>
+        </div>
+    </aside>
+    <section class="content">
+        <h1>Portfolio</h1>
+        <p>Welkom bij ons portfolio. Hier vindt u een selectie van ons werk, variërend van drukwerk tot speciale projecten. We hebben samengewerkt met diverse klanten om hun visie tot leven te brengen. Bekijk enkele van onze meest memorabele projecten hieronder.</p>
+
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="../img/project1.jpg" alt="Project 1">
+                <p>Project 1 - Een unieke poster voor een lokale evenement.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="../img/project2.jpg" alt="Project 2">
+                <p>Project 2 - Gepersonaliseerde uitnodigingen voor een bruiloft.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="../img/project3.jpg" alt="Project 3">
+                <p>Project 3 - Bedrijfsmagazine met een professioneel design.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="../img/project4.jpg" alt="Project 4">
+                <p>Project 4 - Luxe visitekaartjes met foliedruk.</p>
+            </div>
+            <!-- Voeg hier meer portfolio items toe -->
+        </div>
+    </section>
+</main>
+<footer class="footer">
+    &copy; 2024 Drukkerij Qualigrafia bvba
+</footer>
+</body>
+</html>

@@ -1,0 +1,26 @@
+.openingsuren h2, .contact-info h2, .contact-details h2 {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 10px;
+    border-radius: 0%;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.openingsuren ul, .contact-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+}
+
+.openingsuren li, .contact-info li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    font-size: 18px;
+}
+
+.dark-mode .openingsuren ul li, .dark-mode .contact-info ul li {
+    border-bottom: 1px solid #555;
+}

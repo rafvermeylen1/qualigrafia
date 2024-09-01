@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Briefhoofden - Drukkerij Qualigrafia</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/afwerkingspaginas/afwerking.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+        // Functie om de donkere modus in te schakelen
+        function toggleDarkMode() {
+            var body = document.body;
+            body.classList.toggle('dark-mode');
+
+            // Donkere modus voorkeur opslaan in localStorage
+            if (body.classList.contains('dark-mode')) {
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                localStorage.setItem('darkMode', 'disabled');
+            }
+        }
+
+        // Donkere modus voorkeur toepassen bij het laden van de pagina
+        document.addEventListener('DOMContentLoaded', function() {
+            var darkMode = localStorage.getItem('darkMode');
+
+            if (darkMode === 'enabled') {
+                document.body.classList.add('dark-mode');
+            }
+        });
+    </script>
+</head>
+<body>
+<header class="header">
+    <div class="logo-nav-container">
+        <div class="logo">
+            <img src="../../img/logo.png" alt="Drukkerij Qualigrafia">
+        </div>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="../tech_info.html">Technische Info</a>
+            <a href="../producten.html" class='active-page'>Producten</a>
+            <a href="../portfolio.html">Portfolio</a>
+            <a href="../wie_zijn_we.html">Wie zijn we</a>
+            <a href="https://reklameklokje.be/" target="_blank">Reklameklokje</a>
+            <a href="../contact.html">Contact</a>
+        </nav>
+        <div class="toggle-container" onclick="toggleDarkMode()">
+            <span class="toggle-sun">☀️</span>
+            <div class="toggle-circle"></div>
+            <span class="toggle-moon">🌙</span>
+        </div>
+    </div>
+</header>
+<main class="main-content">
+    <section class="content">
+        <h1>Briefhoofden</h1>
+        <img src="../../img/productenpaginas/briefhoofden.jpg" alt="Briefhoofden">
+        <h1>Wat zijn Briefhoofden?</h1>
+        <h2>Definitie</h2>
+        <p><strong>Briefhoofden</strong> zijn gepersonaliseerde kopteksten die bovenaan officiële documenten worden geplaatst, zoals brieven, facturen en andere zakelijke correspondentie. Ze bevatten meestal het logo van het bedrijf, contactgegevens, en andere relevante informatie zoals bedrijfsregistratienummers.</p>
+
+        <h2>Voordelen van Briefhoofden</h2>
+        <ul>
+            <li><strong>Professionele Uitstraling:</strong> Geeft uw correspondentie een professionele en betrouwbare uitstraling.</li>
+            <li><strong>Merkidentiteit:</strong> Versterkt de merkidentiteit door consistent gebruik van logo, kleuren en lettertypen.</li>
+            <li><strong>Herkenbaarheid:</strong> Zorgt ervoor dat uw bedrijf gemakkelijk herkenbaar is op alle documenten.</li>
+        </ul>
+
+        <h2>Toepassingen van Briefhoofden</h2>
+        <p>Briefhoofden worden vaak gebruikt voor:</p>
+        <ul>
+            <li><strong>Zakelijke Brieven:</strong> Officiële correspondentie met klanten, leveranciers en partners.</li>
+            <li><strong>Facturen:</strong> Professioneel ogende facturen die consistent zijn met de huisstijl van het bedrijf.</li>
+            <li><strong>Offertes:</strong> Gepersonaliseerde offertes die een professionele indruk maken.</li>
+            <li><strong>Contracten:</strong> Officiële documenten zoals contracten en overeenkomsten.</li>
+        </ul>
+
+        <h2>Hoe Werkt het Ontwerpen van Briefhoofden?</h2>
+        <p>Het ontwerp van briefhoofden begint met het selecteren van een lay-out die past bij uw merkidentiteit. Elementen zoals het logo, bedrijfsnaam, adres en contactgegevens worden strategisch geplaatst om een overzichtelijke en aantrekkelijke koptekst te creëren. Bij het drukken wordt vaak gebruik gemaakt van hoogwaardige papiersoorten en druktechnieken om een professionele afwerking te garanderen.</p>
+
+        <h2>Belangrijke Overwegingen bij het Ontwerpen van Briefhoofden</h2>
+        <ul>
+            <li><strong>Kleurgebruik:</strong> Zorg ervoor dat de kleuren van het briefhoofd overeenkomen met uw merkidentiteit.</li>
+            <li><strong>Lettertype:</strong> Kies een leesbaar lettertype dat past bij de stijl van uw bedrijf.</li>
+            <li><strong>Lay-out:</strong> Houd de lay-out eenvoudig en overzichtelijk voor een professionele uitstraling.</li>
+        </ul>
+    </section>
+</main>
+<footer class="footer">
+    &copy; 2024 Drukkerij Qualigrafia bvba
+</footer>
+</body>
+</html>

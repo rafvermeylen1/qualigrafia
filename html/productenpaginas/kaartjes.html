@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaartjes - Drukkerij Qualigrafia</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/afwerkingspaginas/afwerking.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+        // Functie om de donkere modus in te schakelen
+        function toggleDarkMode() {
+            var body = document.body;
+            body.classList.toggle('dark-mode');
+
+            // Donkere modus voorkeur opslaan in localStorage
+            if (body.classList.contains('dark-mode')) {
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                localStorage.setItem('darkMode', 'disabled');
+            }
+        }
+
+        // Donkere modus voorkeur toepassen bij het laden van de pagina
+        document.addEventListener('DOMContentLoaded', function() {
+            var darkMode = localStorage.getItem('darkMode');
+
+            if (darkMode === 'enabled') {
+                document.body.classList.add('dark-mode');
+            }
+        });
+    </script>
+</head>
+<body>
+<header class="header">
+    <div class="logo-nav-container">
+        <div class="logo">
+            <img src="../../img/logo.png" alt="Drukkerij Qualigrafia">
+        </div>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="../tech_info.html">Technische Info</a>
+            <a href="../producten.html" class='active-page'>Producten</a>
+            <a href="../portfolio.html">Portfolio</a>
+            <a href="../wie_zijn_we.html">Wie zijn we</a>
+            <a href="https://reklameklokje.be/" target="_blank">Reklameklokje</a>
+            <a href="../contact.html">Contact</a>
+        </nav>
+        <div class="toggle-container" onclick="toggleDarkMode()">
+            <span class="toggle-sun">☀️</span>
+            <div class="toggle-circle"></div>
+            <span class="toggle-moon">🌙</span>
+        </div>
+    </div>
+</header>
+<main class="main-content">
+    <section class="content">
+        <h1>Kaartjes</h1>
+        <img src="../../img/productenpaginas/kaarten.jpg" alt="Kaartjes">
+        <h1>Wat zijn Kaartjes?</h1>
+        <h2>Definitie</h2>
+        <p><strong>Kaartjes</strong> zijn veelzijdige drukwerkproducten die worden gebruikt voor verschillende doeleinden, zoals uitnodigingen, bedankkaartjes, visitekaartjes, en meer. Ze komen in diverse formaten en ontwerpen, afhankelijk van de specifieke behoefte en gelegenheid.</p>
+
+        <h2>Voordelen van Kaartjes</h2>
+        <ul>
+            <li><strong>Veelzijdigheid:</strong> Kaartjes kunnen worden aangepast aan verschillende gelegenheden en doeleinden, van persoonlijk gebruik tot professioneel.</li>
+            <li><strong>Personalisatie:</strong> Ze bieden talrijke mogelijkheden voor personalisatie, zoals het toevoegen van namen, logo's, en speciale boodschappen.</li>
+            <li><strong>Professionele Uitstraling:</strong> Goed ontworpen kaartjes zorgen voor een professionele en verzorgde indruk, wat belangrijk is voor bijvoorbeeld visitekaartjes.</li>
+        </ul>
+
+        <h2>Toepassingen van Kaartjes</h2>
+        <p>Kaartjes worden vaak gebruikt voor:</p>
+        <ul>
+            <li><strong>Uitnodigingen:</strong> Voor bruiloften, feesten, en andere evenementen.</li>
+            <li><strong>Visitekaartjes:</strong> Om contactgegevens professioneel te presenteren.</li>
+            <li><strong>Bedankkaartjes:</strong> Voor het tonen van dankbaarheid na evenementen of voor ontvangen geschenken.</li>
+            <li><strong>Wenskaartjes:</strong> Voor persoonlijke berichten bij feestdagen of speciale gelegenheden.</li>
+        </ul>
+
+        <h2>Hoe Werkt het Ontwerpen van Kaartjes?</h2>
+        <p>Het ontwerpen van kaartjes begint met het kiezen van het juiste formaat en het papier. Vervolgens wordt het ontwerp opgesteld, waarbij de boodschap, afbeeldingen, en eventuele personalisaties centraal staan. Kaartjes kunnen worden gedrukt op diverse soorten papier, zoals mat, glanzend, of gerecycled papier, en kunnen extra afwerkingen hebben zoals reliëfdruk, foliedruk, of spot-UV.</p>
+
+        <h2>Belangrijke Overwegingen bij het Ontwerpen van Kaartjes</h2>
+        <ul>
+            <li><strong>Formaat en Papierkeuze:</strong> Kies een formaat en papier dat past bij de gelegenheid en het doel van het kaartje.</            <li><strong>Ontwerp en Layout:</strong> Zorg voor een aantrekkelijk en duidelijk ontwerp dat de boodschap goed overbrengt.</li>
+            <li><strong>Afwerking:</strong> Overweeg speciale afwerkingen voor een extra luxe uitstraling, zoals reliëfdruk of foliedruk.</li>
+        </ul>
+    </section>
+</main>
+<footer class="footer">
+    &copy; 2024 Drukkerij Qualigrafia bvba
+</footer>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Affiches - Drukkerij Qualigrafia</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/afwerkingspaginas/afwerking.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+        // Functie om de donkere modus in te schakelen
+        function toggleDarkMode() {
+            var body = document.body;
+            body.classList.toggle('dark-mode');
+
+            // Donkere modus voorkeur opslaan in localStorage
+            if (body.classList.contains('dark-mode')) {
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                localStorage.setItem('darkMode', 'disabled');
+            }
+        }
+
+        // Donkere modus voorkeur toepassen bij het laden van de pagina
+        document.addEventListener('DOMContentLoaded', function() {
+            var darkMode = localStorage.getItem('darkMode');
+
+            if (darkMode === 'enabled') {
+                document.body.classList.add('dark-mode');
+            }
+        });
+    </script>
+</head>
+<body>
+<header class="header">
+    <div class="logo-nav-container">
+        <div class="logo">
+            <img src="../../img/logo.png" alt="Drukkerij Qualigrafia">
+        </div>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="../tech_info.html">Technische Info</a>
+            <a href="../producten.html" class='active-page'>Producten</a>
+            <a href="../portfolio.html">Portfolio</a>
+            <a href="../wie_zijn_we.html">Wie zijn we</a>
+            <a href="https://reklameklokje.be/" target="_blank">Reklameklokje</a>
+            <a href="../contact.html">Contact</a>
+        </nav>
+        <div class="toggle-container" onclick="toggleDarkMode()">
+            <span class="toggle-sun">☀️</span>
+            <div class="toggle-circle"></div>
+            <span class="toggle-moon">🌙</span>
+        </div>
+    </div>
+</header>
+<main class="main-content">
+    <section class="content">
+        <h1>Affiches</h1>
+        <img src="../../img/productenpaginas/affiches.jpg" alt="Affiches">
+        <h1>Wat zijn Affiches?</h1>
+        <h2>Definitie</h2>
+        <p><strong>Affiches</strong> zijn grote, gedrukte documenten die worden gebruikt om boodschappen, advertenties of aankondigingen te communiceren. Ze worden meestal op prominente plaatsen opgehangen om maximale zichtbaarheid te garanderen, zoals op muren, billboards, of in etalages.</p>
+
+        <h2>Voordelen van Affiches</h2>
+        <ul>
+            <li><strong>Grote Bereikbaarheid:</strong> Ideaal voor het bereiken van een breed publiek, dankzij hun grote formaat en opvallende ontwerp.</li>
+            <li><strong>Visuele Impact:</strong> Met krachtige afbeeldingen en teksten trekken affiches de aandacht en blijven ze in het geheugen van mensen hangen.</li>
+            <li><strong>Flexibiliteit:</strong> Kunnen worden aangepast aan verschillende afmetingen, kleuren, en materialen voor diverse toepassingen.</li>
+        </ul>
+
+        <h2>Toepassingen van Affiches</h2>
+        <p>Affiches worden vaak gebruikt voor:</p>
+        <ul>
+            <li><strong>Reclamecampagnes:</strong> Voor het promoten van producten, diensten of evenementen.</li>
+            <li><strong>Evenementen:</strong> Om concerten, festivals, of tentoonstellingen aan te kondigen.</li>
+            <li><strong>Educatieve Doeleinden:</strong> Voor het verspreiden van informatie in scholen, musea, of openbare ruimtes.</li>
+            <li><strong>Kunst en Cultuur:</strong> Voor het tonen van kunstwerken of culturele boodschappen.</li>
+        </ul>
+
+        <h2>Hoe Maak je een Effectieve Affiche?</h2>
+        <p>Een goede affiche combineert opvallende beelden met duidelijke, beknopte tekst om de boodschap effectief over te brengen. Het is belangrijk om de juiste balans te vinden tussen visuele elementen en informatie, zodat de affiche zowel aantrekkelijk als informatief is.</p>
+
+        <h2>Belangrijke Overwegingen bij het Ontwerpen van Affiches</h2>
+        <ul>
+            <li><strong>Formaat:</strong> Het formaat van de affiche moet passen bij de locatie waar deze zal worden opgehangen.</li>
+            <li><strong>Kleuren:</strong> Gebruik contrasterende kleuren om de leesbaarheid te verbeteren en de aandacht te trekken.</li>
+            <li><strong>Lettergrootte:</strong> Zorg ervoor dat de tekst leesbaar is vanaf een afstand, vooral de belangrijkste informatie.</li>
+        </ul>
+    </section>
+</main>
+<footer class="footer">
+    &copy; 2024 Drukkerij Qualigrafia bvba
+</footer>
+</body>
+</html>
