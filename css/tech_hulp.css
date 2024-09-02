@@ -24,6 +24,9 @@
 
 .content ul {
     font-size: 14px;
+    font-weight: bold;
+    list-style-type: none;
+    text-align: left;
 }
 
 /* Algemene linkstijlen */
