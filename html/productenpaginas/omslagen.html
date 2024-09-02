@@ -1,10 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omslagen - Drukkerij Qualigrafia</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/afwerkingspaginas/afwerking.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+        // Functie om de donkere modus in te schakelen
+        function toggleDarkMode() {
+            var body = document.body;
+            body.classList.toggle('dark-mode');
+
+            // Donkere modus voorkeur opslaan in localStorage
+            if (body.classList.contains('dark-mode')) {
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                localStorage.setItem('darkMode', 'disabled');
+            }
+        }
+
+        // Donkere modus voorkeur toepassen bij het laden van de pagina
+        document.addEventListener('DOMContentLoaded', function() {
+            var darkMode = localStorage.getItem('darkMode');
+
+            if (darkMode === 'enabled') {
+                document.body.classList.add('dark-mode');
+            }
+        });
+    </script>
 </head>
 <body>
+<header class="header">
+    <div class="logo-nav-container">
+        <div class="logo">
+            <img src="../../img/logo.png" alt="Drukkerij Qualigrafia">
+        </div>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="../tech_info.html">Technische Info</a>
+            <a href="../producten.html" class='active-page'>Producten</a>
+            <a href="../portfolio.html">Portfolio</a>
+            <a href="../wie_zijn_we.html">Wie zijn we</a>
+            <a href="https://reklameklokje.be/" target="_blank">Reklameklokje</a>
+            <a href="../contact.html">Contact</a>
+        </nav>
+        <div class="toggle-container" onclick="toggleDarkMode()">
+            <span class="toggle-sun">☀️</span>
+            <div class="toggle-circle"></div>
+            <span class="toggle-moon">🌙</span>
+        </div>
+    </div>
+</header>
+<main class="main-content">
+    <section class="content">
+        <h1>Omslagen</h1>
+        <img src="../../img/productenpaginas/omslagen.jpg" alt="Omslagen">
+        <h1>Wat zijn Omslagen?</h1>
+        <h2>Definitie</h2>
+        <p><strong>Omslagen</strong> zijn beschermende en decoratieve covers die vaak worden gebruikt voor boeken, brochures, rapporten, en andere gedrukte materialen. Ze bieden zowel fysieke bescherming als een visueel aantrekkelijke presentatie van de inhoud.</p>
 
+        <h2>Voordelen van Omslagen</h2>
+        <ul>
+            <li><strong>Bescherming:</strong> Omslagen beschermen de inhoud tegen beschadigingen, vuil en slijtage.</li>
+            <li><strong>Professionele Uitstraling:</strong> Een goed ontworpen omslag geeft een professionele en verzorgde uitstraling aan uw documenten.</li>
+            <li><strong>Veelzijdigheid:</strong> Omslagen kunnen worden aangepast in termen van materiaal, afwerking, en ontwerp om aan specifieke behoeften te voldoen.</li>
+        </ul>
+
+        <h2>Toepassingen van Omslagen</h2>
+        <p>Omslagen worden vaak gebruikt voor:</p>
+        <ul>
+            <li><strong>Boeken:</strong> Voor zowel harde als zachte kaften van boeken.</li>
+            <li><strong>Brochures:</strong> Voor een beschermende en aantrekkelijk gepresenteerde omslag.</li>
+            <li><strong>Rapporten:</strong> Om zakelijke of academische rapporten een professionele afwerking te geven.</li>
+            <li><strong>Presentatiemapjes:</strong> Voor het presenteren van documenten op een georganiseerde en professionele manier.</li>
+        </ul>
+
+        <h2>Hoe Werkt het Ontwerpen van Omslagen?</h2>
+        <p>Het ontwerpen van een omslag begint met het kiezen van het juiste materiaal en formaat. Vervolgens wordt het ontwerp gecreëerd, waarbij rekening wordt gehouden met het doel van de omslag en de branding. Omslagen kunnen worden voorzien van speciale afwerkingen zoals reliëfdruk, foliedruk, of laminering voor extra bescherming en esthetiek.</p>
+
+        <h2>Belangrijke Overwegingen bij het Ontwerpen van Omslagen</h2>
+        <ul>
+            <li><strong>Materiaalkeuze:</strong> Kies een materiaal dat zowel bescherming als een goede uitstraling biedt.</li>
+            <li><strong>Formaat en Pasvorm:</strong> Zorg ervoor dat de omslag goed past bij de inhoud en eventuele extra's zoals flappen of zakken.</li>
+            <li><strong>Afwerking:</strong> Overweeg afwerkingen zoals laminering of spot-UV voor extra bescherming en visuele impact.</li>
+        </ul>
+    </section>
+</main>
+<footer class="footer">
+    &copy; 2024 Drukkerij Qualigrafia bvba
+</footer>
 </body>
 </html>

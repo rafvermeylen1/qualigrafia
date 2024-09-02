@@ -1,10 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strips - Drukkerij Qualigrafia</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/afwerkingspaginas/afwerking.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+        // Functie om de donkere modus in te schakelen
+        function toggleDarkMode() {
+            var body = document.body;
+            body.classList.toggle('dark-mode');
+
+            // Donkere modus voorkeur opslaan in localStorage
+            if (body.classList.contains('dark-mode')) {
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                localStorage.setItem('darkMode', 'disabled');
+            }
+        }
+
+        // Donkere modus voorkeur toepassen bij het laden van de pagina
+        document.addEventListener('DOMContentLoaded', function() {
+            var darkMode = localStorage.getItem('darkMode');
+
+            if (darkMode === 'enabled') {
+                document.body.classList.add('dark-mode');
+            }
+        });
+    </script>
 </head>
 <body>
+<header class="header">
+    <div class="logo-nav-container">
+        <div class="logo">
+            <img src="../../img/logo.png" alt="Drukkerij Qualigrafia">
+        </div>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="../tech_info.html">Technische Info</a>
+            <a href="../producten.html" class='active-page'>Producten</a>
+            <a href="../portfolio.html">Portfolio</a>
+            <a href="../wie_zijn_we.html">Wie zijn we</a>
+            <a href="https://reklameklokje.be/" target="_blank">Reklameklokje</a>
+            <a href="../contact.html">Contact</a>
+        </nav>
+        <div class="toggle-container" onclick="toggleDarkMode()">
+            <span class="toggle-sun">☀️</span>
+            <div class="toggle-circle"></div>
+            <span class="toggle-moon">🌙</span>
+        </div>
+    </div>
+</header>
+<main class="main-content">
+    <section class="content">
+        <h1>Strips</h1>
+        <img src="../../img/productenpaginas/strips.jpg" alt="Strips">
+        <h1>Wat zijn Strips?</h1>
+        <h2>Definitie</h2>
+        <p><strong>Strips</strong>, ook wel bekend als stripboeken of comics, zijn sequentiële kunstwerken die verhalen vertellen door middel van afbeeldingen, tekst en dialoog. Ze kunnen variëren van korte verhalen tot volledige boeken en zijn populair in verschillende genres, van humor tot avontuur en sciencefiction.</p>
 
+        <h2>Voordelen van Strips</h2>
+        <ul>
+            <li><strong>Verhalende Kracht:</strong> Strips combineren visuele en tekstuele elementen om meeslepende verhalen te vertellen.</li>
+            <li><strong>Creatieve Expressie:</strong> Ze bieden een unieke manier om artistieke creativiteit te uiten.</li>
+            <li><strong>Breed Publiek:</strong> Strips spreken mensen van alle leeftijden aan, van kinderen tot volwassenen.</li>
+        </ul>
+
+        <h2>Toepassingen van Strips</h2>
+        <p>Strips worden vaak gebruikt voor:</p>
+        <ul>
+            <li><strong>Entertainment:</strong> Voor lezers die genieten van geïllustreerde verhalen.</li>
+            <li><strong>Educatie:</strong> Als educatieve hulpmiddelen om complexe ideeën op een toegankelijke manier uit te leggen.</li>
+            <li><strong>Promotie:</strong> Voor bedrijven of organisaties die hun boodschap op een boeiende manier willen overbrengen.</li>
+            <li><strong>Collecties:</strong> Voor verzamelobjecten en speciale uitgaven.</li>
+        </ul>
+
+        <h2>Hoe Werkt het Drukken van Strips?</h2>
+        <p>Het drukproces voor strips begint met het ontwerpen van de pagina's, waarbij kunstwerken, tekst en paneelindeling zorgvuldig worden gepland. Vervolgens wordt het ontwerp gedrukt op hoogwaardig papier, met aandacht voor kleurweergave en detail. De strips kunnen worden afgewerkt met een beschermende omslag en professionele binding om duurzaamheid en een hoogwaardige uitstraling te garanderen.</p>
+
+        <h2>Belangrijke Overwegingen bij Strips</h2>
+        <ul>
+            <li><strong>Kleur en Detail:</strong> Zorg ervoor dat de kleuren en details van de illustraties nauwkeurig worden weergegeven.</li>
+            <li><strong>Bindmethoden:</strong> Overweeg verschillende bindmethoden, zoals nieten of lijmen, afhankelijk van de dikte en het formaat van de strip.</li>
+            <li><strong>Omslag:</strong> Een aantrekkelijke omslag is essentieel om de aandacht van lezers te trekken en de strip te beschermen.</li>
+        </ul>
+    </section>
+</main>
+<footer class="footer">
+    &copy; 2024 Drukkerij Qualigrafia bvba
+</footer>
 </body>
 </html>

@@ -1,10 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tijdschriften - Drukkerij Qualigrafia</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/afwerkingspaginas/afwerking.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+        // Functie om de donkere modus in te schakelen
+        function toggleDarkMode() {
+            var body = document.body;
+            body.classList.toggle('dark-mode');
+
+            // Donkere modus voorkeur opslaan in localStorage
+            if (body.classList.contains('dark-mode')) {
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                localStorage.setItem('darkMode', 'disabled');
+            }
+        }
+
+        // Donkere modus voorkeur toepassen bij het laden van de pagina
+        document.addEventListener('DOMContentLoaded', function() {
+            var darkMode = localStorage.getItem('darkMode');
+
+            if (darkMode === 'enabled') {
+                document.body.classList.add('dark-mode');
+            }
+        });
+    </script>
 </head>
 <body>
+<header class="header">
+    <div class="logo-nav-container">
+        <div class="logo">
+            <img src="../../img/logo.png" alt="Drukkerij Qualigrafia">
+        </div>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="../tech_info.html">Technische Info</a>
+            <a href="../producten.html" class='active-page'>Producten</a>
+            <a href="../portfolio.html">Portfolio</a>
+            <a href="../wie_zijn_we.html">Wie zijn we</a>
+            <a href="https://reklameklokje.be/" target="_blank">Reklameklokje</a>
+            <a href="../contact.html">Contact</a>
+        </nav>
+        <div class="toggle-container" onclick="toggleDarkMode()">
+            <span class="toggle-sun">☀️</span>
+            <div class="toggle-circle"></div>
+            <span class="toggle-moon">🌙</span>
+        </div>
+    </div>
+</header>
+<main class="main-content">
+    <section class="content">
+        <h1>Tijdschriften</h1>
+        <img src="../../img/productenpaginas/tijdschriften.jpg" alt="Tijdschriften">
+        <h1>Wat zijn Tijdschriften?</h1>
+        <h2>Definitie</h2>
+        <p><strong>Tijdschriften</strong> zijn periodieke publicaties die een breed scala aan onderwerpen kunnen behandelen, van nieuws en entertainment tot specialisaties zoals wetenschap, mode, en literatuur. Ze bestaan vaak uit verschillende artikelen, foto's, advertenties en hebben een vaste frequentie zoals wekelijks, maandelijks, of per kwartaal.</p>
 
+        <h2>Voordelen van Tijdschriften</h2>
+        <ul>
+            <li><strong>Breed Bereik:</strong> Tijdschriften bereiken een groot en divers publiek, afhankelijk van de inhoud en doelgroep.</li>
+            <li><strong>Visuele Impact:</strong> De combinatie van tekst, afbeeldingen, en lay-out zorgt voor een aantrekkelijke presentatie.</li>
+            <li><strong>Informatieve Waarde:</strong> Ze bieden uitgebreide informatie en diepgaande analyses over uiteenlopende onderwerpen.</li>
+        </ul>
+
+        <h2>Toepassingen van Tijdschriften</h2>
+        <p>Tijdschriften worden vaak gebruikt voor:</p>
+        <ul>
+            <li><strong>Informatie:</strong> Voor het delen van actuele nieuwsberichten en diepgaande artikelen over specifieke onderwerpen.</li>
+            <li><strong>Amusement:</strong> Voor ontspanning met verhalen, interviews, puzzels, en andere amusementsartikelen.</li>
+            <li><strong>Promotie:</strong> Als medium voor advertenties en promotionele content van bedrijven en merken.</li>
+            <li><strong>Specialisatie:</strong> Voor nichemarkten, zoals vakbladen, hobbytijdschriften, of academische publicaties.</li>
+        </ul>
+
+        <h2>Hoe Werkt het Drukken van Tijdschriften?</h2>
+        <p>Het drukproces voor tijdschriften begint met het ontwerpen van de lay-out, waarbij artikelen, foto's, en advertenties worden geplaatst. Het ontwerp wordt vervolgens gedrukt op speciaal papier dat geschikt is voor kleurrijke afbeeldingen en teksten. Afwerkingstechnieken zoals glanslaminering of matlaminering worden vaak gebruikt om een professionele uitstraling te creëren. Bindingen zoals nieten of lijmen worden toegepast afhankelijk van de omvang en frequentie van het tijdschrift.</p>
+
+        <h2>Belangrijke Overwegingen bij Tijdschriften</h2>
+        <ul>
+            <li><strong>Oplage:</strong> Het aantal te drukken exemplaren hangt af van de doelgroep en distributiemethode.</li>
+            <li><strong>Frequentie:</strong> De publicatiefrequentie beïnvloedt de druk- en productietijd.</li>
+            <li><strong>Lay-out:</strong> Een goed ontworpen lay-out zorgt voor een aantrekkelijke en leesbare tijdschriftpresentatie.</li>
+            <li><strong>Omslag:</strong> De omslag is cruciaal voor de eerste indruk en moet de inhoud effectief weerspiegelen.</li>
+        </ul>
+    </section>
+</main>
+<footer class="footer">
+    &copy; 2024 Drukkerij Qualigrafia bvba
+</footer>
 </body>
 </html>

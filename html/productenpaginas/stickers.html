@@ -1,10 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stickers - Drukkerij Qualigrafia</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/afwerkingspaginas/afwerking.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+        // Functie om de donkere modus in te schakelen
+        function toggleDarkMode() {
+            var body = document.body;
+            body.classList.toggle('dark-mode');
+
+            // Donkere modus voorkeur opslaan in localStorage
+            if (body.classList.contains('dark-mode')) {
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                localStorage.setItem('darkMode', 'disabled');
+            }
+        }
+
+        // Donkere modus voorkeur toepassen bij het laden van de pagina
+        document.addEventListener('DOMContentLoaded', function() {
+            var darkMode = localStorage.getItem('darkMode');
+
+            if (darkMode === 'enabled') {
+                document.body.classList.add('dark-mode');
+            }
+        });
+    </script>
 </head>
 <body>
+<header class="header">
+    <div class="logo-nav-container">
+        <div class="logo">
+            <img src="../../img/logo.png" alt="Drukkerij Qualigrafia">
+        </div>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="../tech_info.html">Technische Info</a>
+            <a href="../producten.html" class='active-page'>Producten</a>
+            <a href="../portfolio.html">Portfolio</a>
+            <a href="../wie_zijn_we.html">Wie zijn we</a>
+            <a href="https://reklameklokje.be/" target="_blank">Reklameklokje</a>
+            <a href="../contact.html">Contact</a>
+        </nav>
+        <div class="toggle-container" onclick="toggleDarkMode()">
+            <span class="toggle-sun">☀️</span>
+            <div class="toggle-circle"></div>
+            <span class="toggle-moon">🌙</span>
+        </div>
+    </div>
+</header>
+<main class="main-content">
+    <section class="content">
+        <h1>Stickers</h1>
+        <img src="../../img/productenpaginas/stickers.jpg" alt="Stickers">
+        <h1>Wat zijn Stickers?</h1>
+        <h2>Definitie</h2>
+        <p><strong>Stickers</strong> zijn zelfklevende stukken papier, vinyl of ander materiaal, vaak bedrukt met een ontwerp, logo of boodschap. Ze worden gebruikt voor een breed scala aan toepassingen, van promoties en branding tot decoratie en identificatie.</p>
 
+        <h2>Voordelen van Stickers</h2>
+        <ul>
+            <li><strong>Veelzijdigheid:</strong> Stickers kunnen op vrijwel elk oppervlak worden aangebracht en zijn geschikt voor binnen- en buitengebruik.</li>
+            <li><strong>Kostenbesparend:</strong> Ze zijn een betaalbare manier om branding of informatie te verspreiden.</li>
+            <li><strong>Aanpassing:</strong> Stickers kunnen in allerlei vormen, maten en ontwerpen worden aangepast om aan specifieke behoeften te voldoen.</li>
+        </ul>
+
+        <h2>Toepassingen van Stickers</h2>
+        <p>Stickers worden vaak gebruikt voor:</p>
+        <ul>
+            <li><strong>Promotionele doeleinden:</strong> Voor het verspreiden van merkboodschappen en aanbiedingen.</li>
+            <li><strong>Verpakking:</strong> Als verzegelings- of merkstickers op producten en verpakkingen.</li>
+            <li><strong>Decoratie:</strong> Voor het personaliseren van laptops, telefoons, meubels, enzovoort.</li>
+            <li><strong>Etikettering:</strong> Voor het identificeren of classificeren van producten en materialen.</li>
+        </ul>
+
+        <h2>Hoe Werkt het Bedrukken van Stickers?</h2>
+        <p>Het proces van het bedrukken van stickers begint met het selecteren van het juiste materiaal en de lijmsoort, afhankelijk van de toepassing. Vervolgens wordt het ontwerp digitaal geprint of gestanst in de gewenste vorm. Stickers kunnen worden afgewerkt met een beschermende laag, zoals een UV-coating, om de duurzaamheid te vergroten.</p>
+
+        <h2>Belangrijke Overwegingen bij Stickers</h2>
+        <ul>
+            <li><strong>Materiaalkeuze:</strong> Kies een materiaal dat geschikt is voor het beoogde gebruik (bijvoorbeeld waterbestendig voor buitenstickers).</li>
+            <li><strong>Lijmsoort:</strong> Afhankelijk van de toepassing kan een permanente of afneembare lijm worden gebruikt.</li>
+            <li><strong>Afwerking:</strong> Overweeg extra afwerkingen zoals laminering voor extra duurzaamheid of een matte/glanzende uitstraling.</li>
+        </ul>
+    </section>
+</main>
+<footer class="footer">
+    &copy; 2024 Drukkerij Qualigrafia bvba
+</footer>
 </body>
 </html>
