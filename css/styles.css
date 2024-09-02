@@ -1,36 +1,3 @@
-/* Responsieve aanpassingen */
-@media (max-width: 768px) {
-    .logo-nav-container {
-        flex-direction: column;
-        padding: 20px;
-    }
-}
-
-@media (max-width: 480px) {
-    .toggle-container {
-        width: 80px;
-        height: 25px;
-    }
-
-    .toggle-circle {
-        width: 16px;
-        height: 16px;
-        left: 20px;
-    }
-
-    body.dark-mode .toggle-circle {
-        left: 40px;
-    }
-
-    .content {
-        font-size: 18px;
-    }
-
-    .content h1 {
-        font-size: 28px;
-    }
-}
-
 /* Stijlen voor het hamburgermenu */
 .hamburger-menu {
     display: flex;
@@ -46,44 +13,6 @@
     font-size: 30px;
     cursor: pointer;
     display: none;
-}
-
-.mobile-nav {
-    flex-direction: column;
-    width: 100%;
-    position: absolute; /* Laat het menu onder de knop verschijnen */
-    top: 100%; /* Positie direct onder de knop */
-    left: 0;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    z-index: 10; /* Zorg ervoor dat het menu boven andere elementen komt */
-}
-
-.mobile-nav a {
-    padding: 15px 20px;
-    text-align: center;
-    border-top: 1px solid #ddd;
-    text-decoration: none;
-    color: #333;
-}
-
-.mobile-nav a:hover {
-    background-color: #f4f4f9;
-}
-
-/* Verberg het menu op desktops */
-@media (max-width: 768px) {
-    .hamburger-icon {
-        display: block;
-    }
-
-    header nav {
-        display: none;
-    }
-
-    #mobile-nav.open {
-        display: flex;
-    }
 }
 
 /* Verbeterde algemene stijl */

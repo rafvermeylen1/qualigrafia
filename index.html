@@ -37,8 +37,8 @@
 
     <script>
         function toggleMenu() {
-            var mobileNav = document.getElementById("mobile-nav");
-            mobileNav.classList.toggle("open");
+            var mainNav = document.getElementById("main-nav");
+            mainNav.classList.toggle("open");
         }
     </script>
 
@@ -50,7 +50,7 @@
             <img src="img/logo.png" alt="Drukkerij Qualigrafia">
         </div>
         <div class="hamburger-icon" onclick="toggleMenu()"> &#9776; </div>
-        <nav id="mobile-nav" class="mobile-nav">
+        <nav id="main-nav" class="main-nav">
             <a href="index.html" class='active-page'>Home</a>
             <a href="html/tech_info.html">Technische Info</a>
             <a href="html/producten.html">Producten</a>
@@ -59,6 +59,11 @@
             <a href="https://reklameklokje.be/" target="_blank">Reklameklokje</a>
             <a href="html/contact.html">Contact</a>
         </nav>
+        <div class="toggle-container" onclick="toggleDarkMode()">
+            <span class="toggle-sun">☀️</span>
+            <div class="toggle-circle"></div>
+            <span class="toggle-moon">🌙</span>
+        </div>
     </div>
 </header>
 <main class="main-content">
