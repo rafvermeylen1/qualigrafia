@@ -13,18 +13,18 @@
 }
 
 .content h1 {
-    font-size: 40px;
+    font-size: 20px;
     margin-bottom: 20px;
 }
 
 .content h2 {
-    font-size: 32px;
+    font-size: 18px;
 }
 
 .content p {
     line-height: 1.6;
     margin-bottom: 20px;
-    font-size: 20px;
+    font-size: 14px;
 }
 
 .content img {
@@ -35,7 +35,7 @@
 .content ul {
     list-style: disc;
     padding-left: 20px;
-    font-size: 20px;
+    font-size: 14px;
 }
 
 .content ul li {

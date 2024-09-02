@@ -4,26 +4,6 @@
         flex-direction: column;
         padding: 20px;
     }
-
-    header .logo img {
-        height: 80px;
-    }
-
-    header nav a {
-        font-size: 18px;
-        margin: 10px 0;
-    }
-
-    .sidebar {
-        width: 100%;
-        height: auto;
-        margin-bottom: 20px;
-    }
-
-    .footer {
-        font-size: 16px;
-        padding: 10px;
-    }
 }
 
 @media (max-width: 480px) {
@@ -40,10 +20,6 @@
 
     body.dark-mode .toggle-circle {
         left: 40px;
-    }
-
-    .sidebar {
-        font-size: 16px;
     }
 
     .content {
@@ -73,7 +49,6 @@
 }
 
 .mobile-nav {
-    display: none;
     flex-direction: column;
     width: 100%;
     position: absolute; /* Laat het menu onder de knop verschijnen */
@@ -121,15 +96,6 @@ body {
     transition: background-color 0.3s, color 0.3s;
 }
 
-header {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    transition: background-color 0.3s;
-}
-
 .logo-nav-container {
     display: flex;
     justify-content: space-between;
@@ -137,28 +103,6 @@ header {
     padding: 20px 40px;
     background-color: #fff;
     transition: background-color 0.3s;
-}
-
-header .logo img {
-    height: 100px;
-}
-
-header nav a {
-    text-decoration: none;
-    color: #333;
-    margin: 0 15px;
-    transition: color 0.3s;
-    font-size: 18px;
-}
-
-header nav a.active-page {
-    color: #ff6600;
-    text-decoration: underline;
-    font-weight: bold;
-}
-
-header nav a:hover {
-    color: #ff6600;
 }
 
 .toggle-container {
@@ -172,120 +116,4 @@ header nav a:hover {
     width: 100px;
     height: 30px;
     transition: background-color 0.3s;
-}
-
-.toggle-sun, .toggle-moon {
-    font-size: 18px;
-    position: absolute;
-    color: #333;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.toggle-moon {
-    right: 5px;
-}
-
-.toggle-circle {
-    background-color: #fff;
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    top: 50%;
-    left: 30px; /* Aanpassen voor betere uitlijning */
-    transform: translateY(-50%);
-    transition: left 0.3s;
-}
-
-body.dark-mode .toggle-circle {
-    left: 60px; /* Aanpassen voor betere uitlijning */
-}
-
-body.dark-mode .toggle-container {
-    background-color: #333;
-}
-
-body.dark-mode .toggle-sun, body.dark-mode .toggle-moon {
-    color: #fff;
-}
-
-body.dark-mode {
-    background-color: #333;
-    color: #f4f4f9;
-}
-
-.sidebar {
-    width: 325px; /* Fixed width */
-    height: 500px; /* Fixed height */
-    margin-right: 40px;
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    transition: background-color 0.3s, color 0.3s;
-    font-size: 14px;
-}
-
-.footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #fff;
-    margin-top: 20px;
-    box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
-    transition: background-color 0.3s, color 0.3s;
-    font-size: 14px;
-}
-
-.openingsuren h2, .contacteer-ons h2 {
-    background-color: #ff6600;
-    color: #fff;
-    padding: 10px;
-    border-radius: 50%;
-    margin-bottom: 10px;
-    text-align: center;
-    font-size: 18px;
-}
-
-.openingsuren ul, .contacteer-ons ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    font-size: 14px;
-}
-
-.openingsuren ul li, .contacteer-ons ul li {
-    padding: 10px 0;
-    border-bottom: 1px solid #ddd;
-    font-size: 14px;
-}
-
-.dark-mode .sidebar, .dark-mode .content, .dark-mode .footer {
-    background-color: #444;
-    color: #f4f4f9;
-}
-
-.dark-mode header nav a {
-    color: #f4f4f9;
-}
-
-.dark-mode header nav a:hover {
-    color: #ff6600;
-}
-
-.dark-mode .openingsuren h2, .dark-mode .contacteer-ons h2 {
-    background-color: #e65c00;
-}
-
-.dark-mode .openingsuren ul li, .dark-mode .contacteer-ons ul li {
-    border-bottom: 1px solid #555;
-}
-
-body.dark-mode header {
-    background-color: #444;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    transition: background-color 0.3s;
-}
-
-body.dark-mode .logo-nav-container {
-    background-color: #444;
 }

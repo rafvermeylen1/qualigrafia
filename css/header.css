@@ -1,0 +1,56 @@
+/* Responsieve aanpassingen */
+@media (max-width: 768px) {
+    header .logo img {
+        height: 80px;
+    }
+
+    header nav a {
+        font-size: 18px;
+        margin: 10px 0;
+    }
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: background-color 0.3s;
+}
+
+header .logo img {
+    height: 100px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 15px;
+    transition: color 0.3s;
+    font-size: 18px;
+}
+
+header nav a.active-page {
+    color: #ff6600;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    color: #ff6600;
+}
+
+.dark-mode header nav a {
+    color: #f4f4f9;
+}
+
+.dark-mode header nav a:hover {
+    color: #ff6600;
+}
+
+body.dark-mode header {
+    background-color: #444;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: background-color 0.3s;
+}

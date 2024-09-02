@@ -1,8 +1,12 @@
+h1 {
+    font-size: 20px;
+}
+
 .openingsuren h2, .contact-info h2, .contact-details h2 {
     background-color: #ff6600;
     color: #fff;
     padding: 10px;
-    border-radius: 0%;
+    border-radius: 0;
     font-size: 18px;
     margin-bottom: 10px;
     text-align: center;

@@ -1,0 +1,49 @@
+.toggle-sun, .toggle-moon {
+    font-size: 18px;
+    position: absolute;
+    color: #333;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.toggle-moon {
+    right: 5px;
+}
+
+.toggle-circle {
+    background-color: #fff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    left: 30px; /* Aanpassen voor betere uitlijning */
+    transform: translateY(-50%);
+    transition: left 0.3s;
+}
+
+body.dark-mode .toggle-circle {
+    left: 60px; /* Aanpassen voor betere uitlijning */
+}
+
+body.dark-mode .toggle-container {
+    background-color: #333;
+}
+
+body.dark-mode .toggle-sun, body.dark-mode .toggle-moon {
+    color: #fff;
+}
+
+body.dark-mode {
+    background-color: #333;
+    color: #f4f4f9;
+}
+
+.dark-mode .content, .dark-mode  {
+    background-color: #444;
+    color: #f4f4f9;
+}
+
+body.dark-mode .logo-nav-container {
+    background-color: #444;
+}
