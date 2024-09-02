@@ -160,6 +160,7 @@ body.dark-mode header {
 
     .content {
         font-size: 18px;
+        padding: 7px;
     }
 
     .content h1 {
