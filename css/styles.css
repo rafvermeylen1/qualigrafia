@@ -46,3 +46,55 @@ body {
     height: 30px;
     transition: background-color 0.3s;
 }
+
+.breadcrumbs {
+    margin-bottom: 20px;
+    font-size: 14px;
+    padding-left: 0; /* Zorgt ervoor dat de breadcrumbs helemaal links beginnen */
+}
+
+.breadcrumbs ul {
+    list-style: none;
+    padding-left: 0; /* Verwijdert padding links */
+    margin-left: 0; /* Verwijdert margin links */
+    margin-top: 0; /* Verwijdert margin boven */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.breadcrumbs ul li {
+    margin-right: 10px;
+    padding-left: 0; /* Geen padding links voor de lijst items */
+    margin-left: 0; /* Geen margin links voor de lijst items */
+    display: inline-flex;
+    align-items: center;
+}
+
+.breadcrumbs ul li::after {
+    content: ">";
+    margin-left: 10px;
+}
+
+.breadcrumbs ul li:last-child::after {
+    content: "";
+}
+
+
+.breadcrumbs ul li a {
+    text-decoration: none;
+    color: #ff6600; /* Standaard linkkleur */
+    transition: color 0.3s;
+}
+
+.breadcrumbs ul li a:hover {
+    color: #ff1100; /* Kleur bij hover */
+}
+
+/* Breadcrumbs in donkere modus */
+body.dark-mode .breadcrumbs ul li a {
+    color: #f4f4f9;
+}
+
+body.dark-mode .breadcrumbs ul li a:hover {
+    color: #ff6600; /* Hover kleur in donkere modus */
+}
