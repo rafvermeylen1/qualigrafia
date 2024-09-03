@@ -39,11 +39,27 @@ body.dark-mode {
     color: #f4f4f9;
 }
 
+body.dark-mode h1, body.dark-mode h2 {
+    color: #f4f4f9;
+}
+
 .dark-mode .content, .dark-mode  {
     background-color: #444;
     color: #f4f4f9;
 }
 
 body.dark-mode .logo-nav-container {
+    background-color: #444;
+}
+
+body.dark-mode .portfolio-item {
+    background-color: #555;
+}
+
+body.dark-mode .portfolio-item p {
+    color: #f4f4f9;
+}
+
+body.dark-mode header.header .hamburger-menu {
     background-color: #444;
 }
