@@ -16,10 +16,15 @@
 
 .content h1 {
     font-size: 20px;
+    color: #333;
+    margin-bottom: 20px;
 }
 
 .content h2 {
     font-size: 16px;
+    color: #555;
+    margin-top: 30px;
+    margin-bottom: 15px;
 }
 
 .content ul {
@@ -27,6 +32,30 @@
     font-weight: bold;
     list-style-type: none;
     text-align: left;
+    display: flex;
+    flex-wrap: wrap; /* Splits de lijst in meerdere kolommen */
+    padding: 0;
+    margin: 0;
+}
+
+.content ul li {
+    flex: 1 1 50%; /* Elke item neemt de helft van de breedte in beslag */
+    margin-bottom: 10px;
+    padding: 5px 0;
+    box-sizing: border-box;
+}
+
+.content ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.content ul li a:hover {
+    color: #ff6600;
+    background-color: #f4f4f4;
 }
 
 /* Algemene linkstijlen */
@@ -44,7 +73,7 @@ header nav a:hover, .content a:hover {
     color: #333; /* Kleur van bezochte links */
 }
 
-header nav a.active-page, .content a.active-page {
+header nav a.active-page, .content a.active-page, .content ul li a.active-page {
     color: #ff6600;
     text-decoration: underline;
     font-weight: bold;

@@ -41,3 +41,36 @@
 .content ul li {
     padding: 5px 0;
 }
+
+/* Responsieve aanpassingen */
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .content {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-content {
+        padding: 10px;
+    }
+
+    .content {
+        max-width: 90%;
+        font-size: 18px;
+    }
+
+    .content img {
+        max-width: 100%;
+        font-size: 18px;
+    }
+
+    .banner img {
+        margin-top: 0.5em;
+        max-width: 100px;
+    }
+}

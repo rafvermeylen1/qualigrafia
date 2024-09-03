@@ -7,15 +7,17 @@
     <link rel="stylesheet" href="../../css/styles.css">
     <link rel="stylesheet" href="../../css/footer.css">
     <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="../../css/darkmode.css">
     <link rel="stylesheet" href="../../css/afwerkingspaginas/afwerking.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <script>
-        // Function to toggle dark mode
+        // Functie om de donkere modus in te schakelen
         function toggleDarkMode() {
             var body = document.body;
             body.classList.toggle('dark-mode');
 
-            // Save dark mode preference to localStorage
+            // Donkere modus voorkeur opslaan in localStorage
             if (body.classList.contains('dark-mode')) {
                 localStorage.setItem('darkMode', 'enabled');
             } else {
@@ -23,7 +25,7 @@
             }
         }
 
-        // Apply dark mode preference on page load
+        // Donkere modus voorkeur toepassen bij het laden van de pagina
         document.addEventListener('DOMContentLoaded', function() {
             var darkMode = localStorage.getItem('darkMode');
 
@@ -32,14 +34,22 @@
             }
         });
     </script>
+
+    <script>
+        function toggleMenu() {
+            var mainNav = document.getElementById("main-nav");
+            mainNav.classList.toggle("open");
+        }
+    </script>
 </head>
 <body>
 <header class="header">
-    <div class="logo-nav-container">
+    <div class="hamburger-menu">
         <div class="logo">
             <img src="../../img/logo.png" alt="Drukkerij Qualigrafia">
         </div>
-        <nav>
+        <div class="hamburger-icon" onclick="toggleMenu()"> &#9776; </div>
+        <nav id="main-nav" class="main-nav">
             <a href="../../index.html">Home</a>
             <a href="../tech_info.html" class='active-page'>Technische Info</a>
             <a href="../producten.html">Producten</a>

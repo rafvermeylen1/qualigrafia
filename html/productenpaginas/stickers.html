@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="../../css/styles.css">
     <link rel="stylesheet" href="../../css/footer.css">
     <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="../../css/darkmode.css">
     <link rel="stylesheet" href="../../css/afwerkingspaginas/afwerking.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <script>
@@ -32,15 +34,23 @@
             }
         });
     </script>
+
+    <script>
+        function toggleMenu() {
+            var mainNav = document.getElementById("main-nav");
+            mainNav.classList.toggle("open");
+        }
+    </script>
 </head>
 <body>
 <header class="header">
-    <div class="logo-nav-container">
+    <div class="hamburger-menu">
         <div class="logo">
             <img src="../../img/logo.png" alt="Drukkerij Qualigrafia">
         </div>
-        <nav>
-            <a href="../index.html">Home</a>
+        <div class="hamburger-icon" onclick="toggleMenu()"> &#9776; </div>
+        <nav id="main-nav" class="main-nav">
+            <a href="../../index.html">Home</a>
             <a href="../tech_info.html">Technische Info</a>
             <a href="../producten.html" class='active-page'>Producten</a>
             <a href="../portfolio.html">Portfolio</a>
