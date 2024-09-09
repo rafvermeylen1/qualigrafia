@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lamineren - Drukkerij Qualigrafia</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="../../css/darkmode.css">
+    <link rel="stylesheet" href="../../css/afwerkingspaginas/afwerking.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+        // Functie om de donkere modus in te schakelen
+        function toggleDarkMode() {
+            var body = document.body;
+            body.classList.toggle('dark-mode');
+
+            // Donkere modus voorkeur opslaan in localStorage
+            if (body.classList.contains('dark-mode')) {
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                localStorage.setItem('darkMode', 'disabled');
+            }
+        }
+
+        // Donkere modus voorkeur toepassen bij het laden van de pagina
+        document.addEventListener('DOMContentLoaded', function() {
+            var darkMode = localStorage.getItem('darkMode');
+
+            if (darkMode === 'enabled') {
+                document.body.classList.add('dark-mode');
+            }
+        });
+    </script>
+
+    <script>
+        function toggleMenu() {
+            var mainNav = document.getElementById("main-nav");
+            mainNav.classList.toggle("open");
+        }
+    </script>
+</head>
+<body>
+<header class="header">
+    <div class="hamburger-menu">
+        <div class="logo">
+            <a href="../../index.html">
+                <img src="../../img/logo.png" alt="Drukkerij Qualigrafia">
+            </a>
+        </div>
+        <div class="hamburger-icon" onclick="toggleMenu()"> &#9776; </div>
+        <nav id="main-nav" class="main-nav">
+            <a href="../../index.html">Home</a>
+            <a href="../tech_info.html" class='active-page'>Technische Info</a>
+            <a href="../producten.html">Producten</a>
+            <a href="../portfolio.html">Portfolio</a>
+            <a href="../wie_zijn_we.html">Wie zijn we</a>
+            <a href="https://reklameklokje.be/" target="_blank">Reklameklokje</a>
+            <a href="../contact.html">Contact</a>
+        </nav>
+        <div class="toggle-container" onclick="toggleDarkMode()">
+            <span class="toggle-sun">☀️</span>
+            <div class="toggle-circle"></div>
+            <span class="toggle-moon">🌙</span>
+        </div>
+    </div>
+</header>
+<main class="main-content">
+    <section class="content">
+        <nav class="breadcrumbs">
+            <ul>
+                <li><a href="../tech_info.html">Technische Info</a></li>
+                <li>Lamineren</li>
+            </ul>
+        </nav>
+        <h1>Lamineren</h1>
+        <img src="../../img/afwerkingspaginas/lamineren.jpg" alt="Lamineren">
+        <h1>Wat is Lamineren?</h1>
+        <h2>Definitie</h2>
+        <p><strong>Lamineren</strong> is een afwerkingstechniek waarbij een dunne, transparante plastic laag wordt aangebracht op papier of karton. Dit beschermt het materiaal tegen vuil, water, scheuren en andere beschadigingen, en geeft het een professioneel ogende afwerking.</p>
+
+        <h2>Voordelen van Lamineren</h2>
+        <ul>
+            <li><strong>Duurzaamheid:</strong> Beschermt documenten tegen slijtage, vlekken en vocht, waardoor ze langer meegaan.</li>
+            <li><strong>Verbeterde presentatie:</strong> Geeft een glanzende of matte afwerking, wat de visuele aantrekkingskracht van het document verhoogt.</li>
+            <li><strong>Veelzijdigheid:</strong> Kan worden toegepast op verschillende materialen en in verschillende formaten.</li>
+        </ul>
+
+        <h2>Toepassingen van Lamineren</h2>
+        <p>Lamineren wordt vaak gebruikt voor:</p>
+        <ul>
+            <li><strong>Visitekaartjes:</strong> Voor een professionele en duurzame afwerking.</li>
+            <li><strong>Menu's:</strong> Beschermt menu's in restaurants tegen vlekken en scheuren.</li>
+            <li><strong>Posters:</strong> Verhoogt de levensduur en duurzaamheid van posters voor binnen- en buitengebruik.</li>
+            <li><strong>Documenten:</strong> Voor het beschermen van belangrijke papieren zoals diploma's of certificaten.</li>
+        </ul>
+
+        <h2>Hoe Werkt Lamineren?</h2>
+        <p>Bij het lamineren wordt een document tussen twee lagen transparante plastic folie geplaatst. De folie wordt vervolgens verwarmd en onder druk aangebracht, waardoor het stevig aan het document hecht. Afhankelijk van de gewenste afwerking kan er worden gekozen voor glanzende, matte of soft-touch laminaat.</p>
+
+        <h2>Belangrijke Overwegingen bij Lamineren</h2>
+        <ul>
+            <li><strong>Dikte van de Folie:</strong> Verschillende diktes bieden verschillende niveaus van bescherming en stijfheid.</li>
+            <li><strong>Afwerkingsopties:</strong> Kies tussen glanzend, mat of soft-touch laminaat voor de gewenste uitstraling.</li>
+            <li><strong>Milieu-impact:</strong> Hoewel lamineren de levensduur van documenten verlengt, is het belangrijk om rekening te houden met de milieu-impact van het gebruik van plastic.</li>
+        </ul>
+    </section>
+</main>
+<footer class="footer">
+    &copy; 2024 Drukkerij Qualigrafia bvba
+</footer>
+</body>
+</html>
